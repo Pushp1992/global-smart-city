@@ -79,7 +79,7 @@ export default function NavBar() {
         <div className={classes.root}>
             <Grid container spacing={3}>
                 <Grid item md={3}>
-                    <Paper className={classes.paper}>Global Smart City</Paper>
+                    <div className={classes.paper}>Global Smart City</div>
                 </Grid>
                 {/* <Grid item md={6}>
                      <Paper className={classes.paper}>md=6</Paper>

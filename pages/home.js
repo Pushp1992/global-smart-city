@@ -7,6 +7,7 @@ import styles from '../styles/home.module.scss';
 
 import NavBar from '../src/component/nav-bar';
 import TagLine from '../src/component/HomeComponent/tag-line';
+import Statistics from '../src/component/Statistics/statistics';
 
 
 function HomePage() {
@@ -14,6 +15,7 @@ function HomePage() {
 
     return (
         <div>
+            {/* Includes Main Image with NavBar and TagLine */}
             <Container disableGutters={true} maxWidth={false}>
                 <Grid item xs className={styles.imagePosition}>
                     <Paper elevation={3}>
@@ -27,6 +29,22 @@ function HomePage() {
                     <TagLine />
                 </Grid>
             </Container>
+
+            <Container className={styles.section2}>
+                {/* Includes Information ON Basic Statistics */}
+                <Grid>
+                    <Statistics />
+                </Grid>
+            </Container>
+
+            <Container>
+                <Grid>
+                    <Paper>
+                        <h2>Introduction seaction - 2</h2>
+                    </Paper>
+                </Grid>
+            </Container>
+
         </div>
     )
 }

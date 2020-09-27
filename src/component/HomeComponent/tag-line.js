@@ -23,7 +23,9 @@ const TagLine = () => {
             <div style={styles.heading}>Making City Smart</div>
             <div style={styles.subheading}>
                 <label>GSC</label> &nbsp;
-                <label style={styles.wordbreak}>data-powered platform enables local <br/> governments to effectively procure technology solutions</label>
+                <label style={styles.wordbreak}>data-powered platform enables local <br />
+                governments to effectively procure technology solutions
+                </label>
             </div>
         </div>
     )
