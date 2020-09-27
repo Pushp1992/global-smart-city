@@ -1,0 +1,29 @@
+.imageStyle {
+  image-rendering: crisp-edges;
+  background-size: contain;
+  width: 1610px;
+  height: 800px;
+  // width: 100%;
+  // height: auto;
+}
+
+.imagePosition {
+  position: absolute;
+}
+
+.navBarPosition {
+  z-index: 9;
+  margin-top: 0px;
+  margin: 20px;
+  opacity: 0.8;
+}
+
+.tagLinePosition {
+  z-index: 9;
+  margin-top: 150px;
+  // margin-right: 30px;
+  // margin: 20px;
+  opacity: 0.8;
+}
+
+// brand color: #092066
