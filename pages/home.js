@@ -8,6 +8,7 @@ import styles from '../styles/home.module.scss';
 import NavBar from '../src/component/nav-bar';
 import TagLine from '../src/component/HomeComponent/tag-line';
 import Statistics from '../src/component/Statistics/statistics';
+import OurClients from '../src/component/OurClients/clients';
 
 
 function HomePage() {
@@ -37,11 +38,10 @@ function HomePage() {
                 </Grid>
             </Container>
 
-            <Container>
+            <Container className={styles.section3}>
+                {/* Who we Serve */}
                 <Grid>
-                    <Paper>
-                        <h2>Introduction seaction - 2</h2>
-                    </Paper>
+                    <OurClients />
                 </Grid>
             </Container>
 
