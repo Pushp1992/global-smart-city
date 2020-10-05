@@ -6,9 +6,9 @@ import Grid from '@material-ui/core/Grid';
 import styles from '../styles/home.module.scss';
 
 import NavBar from '../src/component/nav-bar';
-import TagLine from '../src/component/HomeComponent/tag-line';
-import Statistics from '../src/component/Statistics/statistics';
-import OurClients from '../src/component/OurClients/clients';
+import TagLine from '../src/component/HomeComponent/TagLine/tag-line';
+import Statistics from '../src/component/HomeComponent/Statistics/statistics';
+import OurClients from '../src/component/HomeComponent/OurClients/clients';
 
 
 function HomePage() {
