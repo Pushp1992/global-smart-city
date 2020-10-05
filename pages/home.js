@@ -33,6 +33,9 @@ function HomePage() {
 
             <Container className={styles.section2}>
                 {/* Includes Information ON Basic Statistics */}
+                <Grid container direction="row" justify="center" alignItems="center">
+                    <h2>Our BenchMarkings</h2>
+                </Grid>
                 <Grid>
                     <Statistics />
                 </Grid>
@@ -40,6 +43,9 @@ function HomePage() {
 
             <Container className={styles.section3}>
                 {/* Who we Serve */}
+                <Grid container direction="row" justify="center" alignItems="center">
+                    <h2>Who We Serve</h2>
+                </Grid>
                 <Grid>
                     <OurClients />
                 </Grid>

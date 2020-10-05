@@ -48,6 +48,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     //width: 500,
   },
+  SwipeableViewsStyle: {
+    marginTop: 20
+  }
 }));
 
 export default function OurClients() {
@@ -61,7 +64,6 @@ export default function OurClients() {
 
   const handleChangeIndex = (index) => {
     setValue(index);
-    console.log('index', index)
   };
 
   return (
@@ -85,6 +87,7 @@ export default function OurClients() {
         </Tabs>
       </AppBar>
       <SwipeableViews
+        className={classes.SwipeableViewsStyle} 
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={value}
         onChangeIndex={handleChangeIndex}

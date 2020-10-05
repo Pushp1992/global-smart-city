@@ -47,17 +47,15 @@ export default function ClientCard({data}) {
   const theme = useTheme();
   const [clientInfo, setClientInfo] = React.useState([]);
 
-   console.log("data", data);
-
   return (
     <Card className={classes.root}>
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
-            <h4>{data.heading}</h4>
+            {data.heading}
           </Typography>
           <Paper className={classes.paper}>
-            <Grid container wrap="nowrap" spacing={2}>
+            <Grid container wrap="nowrap" spacing={1}>
                 <Grid item xs>
                     <Typography>{data.subheading}</Typography>
                 </Grid>
