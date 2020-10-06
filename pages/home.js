@@ -9,6 +9,7 @@ import NavBar from '../src/component/nav-bar';
 import TagLine from '../src/component/HomeComponent/TagLine/tag-line';
 import Statistics from '../src/component/HomeComponent/Statistics/statistics';
 import OurClients from '../src/component/HomeComponent/OurClients/clients';
+import PreFooter from '../src/component/Footer/pre-footer';
 
 
 function HomePage() {
@@ -48,6 +49,16 @@ function HomePage() {
                 </Grid>
                 <Grid>
                     <OurClients />
+                </Grid>
+            </Container>
+
+            <br/><br/><br/>
+            <Container disableGutters={true} maxWidth={false} className={styles.footer}>
+                <Grid item xs className={styles.footerImagePosition}>
+                    <PreFooter />
+                </Grid>
+                <Grid item md={12} className={styles.footer}>
+                    {/* <NavBar /> */}
                 </Grid>
             </Container>
 

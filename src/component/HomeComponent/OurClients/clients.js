@@ -74,8 +74,10 @@ export default function OurClients() {
           onChange={handleChange}
           indicatorColor="primary"
           textColor="primary"
-          variant="fullWidth"
+          // variant="fullWidth"
           aria-label="full width tabs example"
+          scrollButtons="auto"
+          variant="scrollable"
         >
           {
             clients.map((item, index) => {
