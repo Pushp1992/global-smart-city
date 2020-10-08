@@ -10,6 +10,7 @@ import TagLine from '../src/component/HomeComponent/TagLine/tag-line';
 import Statistics from '../src/component/HomeComponent/Statistics/statistics';
 import OurClients from '../src/component/HomeComponent/OurClients/clients';
 import PreFooter from '../src/component/Footer/pre-footer';
+import Footer from '../src/component/Footer/footer';
 
 
 function HomePage() {
@@ -58,7 +59,7 @@ function HomePage() {
                     <PreFooter />
                 </Grid>
                 <Grid item md={12} className={styles.footer}>
-                    {/* <NavBar /> */}
+                    <Footer />
                 </Grid>
             </Container>
 

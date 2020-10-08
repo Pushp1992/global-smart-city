@@ -43,18 +43,27 @@ function a11yProps(index) {
   };
 }
 
-const useStyles = makeStyles((theme) => ({
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     backgroundColor: theme.palette.background.paper,
+//     //width: 500,
+//   },
+//   SwipeableViewsStyle: {
+//     marginTop: 20
+//   }
+// }));
+const styles = {
   root: {
-    backgroundColor: theme.palette.background.paper,
+    // backgroundColor: theme.palette.background.paper,
     //width: 500,
   },
   SwipeableViewsStyle: {
     marginTop: 20
   }
-}));
+};
 
 export default function OurClients() {
-  const classes = useStyles();
+  // const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
@@ -67,7 +76,7 @@ export default function OurClients() {
   };
 
   return (
-    <div className={classes.root}>
+    <div style={styles.root}>
       <AppBar position="static" color="default">
         <Tabs
           value={value}
@@ -89,7 +98,7 @@ export default function OurClients() {
         </Tabs>
       </AppBar>
       <SwipeableViews
-        className={classes.SwipeableViewsStyle} 
+        style={styles.SwipeableViewsStyle} 
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={value}
         onChangeIndex={handleChangeIndex}

@@ -61,8 +61,8 @@ const clients = [
     name:"Local Government",
     heading:"Helping Local Government",
     image:`${IMG_URL}/local_ybmda0`,
-    baseImage1:`${BASE_IMG_URL}/base-img-8_xtwjhp`,
-    baseImage2:`${BASE_IMG_URL}/base-img-2_fb9owi`,
+    baseImage1:`${BASE_IMG_URL}/base-img-2_fb9owi`,
+    baseImage2:`${BASE_IMG_URL}/base-img-8_xtwjhp`,
     subheading:"We help governments to innovate bring order to what can be a chaotic process to maximize the chances of getting to successful outcomes across your portfolio of innovation projects and initiatives",
   },
 ];

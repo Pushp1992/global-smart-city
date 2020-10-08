@@ -12,14 +12,14 @@ import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
 
-const useStyles = makeStyles((theme) => ({
+const styles = {
   root: {
     display: 'flex',
   },
   paper: {
     maxWidth: 600,
-    margin: `${theme.spacing(1)}px auto`,
-    padding: theme.spacing(2),
+    // margin: `${theme.spacing(1)}px auto`,
+    padding: 2,
   },
   details: {
     display: 'flex',
@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flex: '1 0 auto',
+  },
+  heading: {
+    marginBottom: 10,
   },
   cover: {
     width: 550,
@@ -36,22 +39,19 @@ const useStyles = makeStyles((theme) => ({
     height: 80
   },
   button: {
-    margin: theme.spacing(1),
+    margin: 2,
   },
-}));
+}
 
 export default function ClientCard({data}) {
-  const classes = useStyles();
-  const theme = useTheme();
-
   return (
-    <Card className={classes.root}>
-      <div className={classes.details}>
-        <CardContent className={classes.content}>
-          <Typography component="h5" variant="h5">
+    <Card style={styles.root}>
+      <div style={styles.details}>
+        <CardContent style={styles.content}>
+          <Typography style={styles.heading} component="h5" variant="h5">
             {data.heading}
           </Typography>
-          <Paper className={classes.paper}>
+          <Paper style={styles.paper}>
             <Grid container wrap="nowrap" spacing={1}>
                 <Grid item xs>
                     <Typography>{data.subheading}</Typography>
@@ -60,15 +60,15 @@ export default function ClientCard({data}) {
         </Paper>
         </CardContent>
         <Grid container direction="row" justify="space-evenly" alignItems="center">
-          <CardMedia className={classes.baseCover} image={data.baseImage1}  title="client motto" />
-          <CardMedia className={classes.baseCover} image={data.baseImage2}  title="client motto" />
-          <Button variant="contained" color="primary" className={classes.button} endIcon={<ArrowForwardIcon/>}>
+          <CardMedia style={styles.baseCover} image={data.baseImage1}  title="client motto" />
+          <CardMedia style={styles.baseCover} image={data.baseImage2}  title="client motto" />
+          <Button variant="contained" color="primary" style={styles.button} endIcon={<ArrowForwardIcon/>}>
             Know More
           </Button>
         </Grid>
       </div>
       <CardMedia
-        className={classes.cover}
+        style={styles.cover}
         image={data.image}
         title="who we serve"
       />
