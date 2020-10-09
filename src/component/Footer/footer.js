@@ -6,9 +6,10 @@ import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 
 const fbImg = "../images/socialMedia/fb.png";
-const instaImg = "../images/socialMedia/insta.jpg";
+const instaImg = "../images/socialMedia/insta.png";
 const wappImg = "../images/socialMedia/wapp.png";
-const linkedinImg = "";
+const linkedinImg = "../images/socialMedia/linkedin.png";
+const tweeterImg = "../images/socialMedia/tweet.png";
 
 // const useStyles = makeStyles((theme) => ({
 //     root: {
@@ -90,6 +91,8 @@ export default function Footer() {
                     <Avatar alt="facebook" src={fbImg} />
                     <Avatar alt="instagram" src={instaImg} />
                     <Avatar alt="whatsapp" src={wappImg} />
+                    <Avatar alt="tweeter" src={tweeterImg} />
+                    <Avatar alt="linkedin" src={linkedinImg} />
                 </div>
                 </Grid>
                 <Grid item xs={3}>
