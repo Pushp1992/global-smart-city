@@ -9,6 +9,7 @@ import NavBar from '../src/component/nav-bar';
 import TagLine from '../src/component/HomeComponent/TagLine/tag-line';
 import Statistics from '../src/component/HomeComponent/Statistics/statistics';
 import OurClients from '../src/component/HomeComponent/OurClients/clients';
+import HowWeServe from '../src/component/HomeComponent/HowWeServe/HowWeServe';
 import PreFooter from '../src/component/Footer/pre-footer';
 import Footer from '../src/component/Footer/footer';
 
@@ -33,7 +34,7 @@ function HomePage() {
                 </Grid>
             </Container>
 
-            <Container className={styles.section2}>
+            <Container className={styles.benchmarking}>
                 {/* Includes Information ON Basic Statistics */}
                 <Grid container direction="row" justify="center" alignItems="center">
                     <h2>Our BenchMarkings</h2>
@@ -43,13 +44,23 @@ function HomePage() {
                 </Grid>
             </Container>
 
-            <Container className={styles.section3}>
+            <Container className={styles.marginTop}>
                 {/* Who we Serve */}
                 <Grid container direction="row" justify="center" alignItems="center">
                     <h2>Who We Serve</h2>
                 </Grid>
                 <Grid>
                     <OurClients />
+                </Grid>
+            </Container>
+
+            <Container className={styles.marginTop}>
+                {/* Who we Serve */}
+                <Grid container direction="row" justify="center" alignItems="center">
+                    <h2>How We Serve</h2>
+                </Grid>
+                <Grid>
+                    <HowWeServe />
                 </Grid>
             </Container>
 
