@@ -13,6 +13,8 @@ import HowWeServe from '../src/component/HomeComponent/HowWeServe/HowWeServe';
 import PreFooter from '../src/component/Footer/pre-footer';
 import Footer from '../src/component/Footer/footer';
 
+import { Parallax, ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
+import ParallaxImage from '../src/component/Parallax/parallax';
 
 function HomePage() {
     const BASE_URL = "https://res.cloudinary.com/pushpcloud/image/upload";
@@ -34,35 +36,43 @@ function HomePage() {
                 </Grid>
             </Container>
 
-            <Container className={styles.benchmarking}>
-                {/* Includes Information ON Basic Statistics */}
-                <Grid container direction="row" justify="center" alignItems="center">
-                    <h2>Our BenchMarkings</h2>
-                </Grid>
-                <Grid>
-                    <Statistics />
-                </Grid>
-            </Container>
+            <ParallaxProvider>
+                    <Container className={styles.benchmarking}>
+                <Parallax className="custom-class" x={[-5, 5]} y={[-20, 20]} tagOuter="figure">
+                        {/* Includes Information ON Basic Statistics */}
+                        <Grid container direction="row" justify="center" alignItems="center">
+                            <h2>Our BenchMarkings</h2>
+                        </Grid>
+                        <Grid>
+                            <Statistics />
+                        </Grid>
+                </Parallax>
+                    </Container>
 
-            <Container className={styles.marginTop}>
-                {/* Who we Serve */}
-                <Grid container direction="row" justify="center" alignItems="center">
-                    <h2>Who We Serve</h2>
-                </Grid>
-                <Grid>
-                    <OurClients />
-                </Grid>
-            </Container>
+                    <Container className={styles.marginTop}>
+                <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+                        {/* Who we Serve */}
+                        <Grid container direction="row" justify="center" alignItems="center">
+                            <h2>Who We Serve</h2>
+                        </Grid>
+                        <Grid>
+                            <OurClients />
+                        </Grid>
+                </Parallax>
+                    </Container>
 
-            <Container className={styles.marginTop}>
-                {/* Who we Serve */}
-                <Grid container direction="row" justify="center" alignItems="center">
-                    <h2>How We Serve</h2>
-                </Grid>
-                <Grid>
-                    <HowWeServe />
-                </Grid>
-            </Container>
+                    <Container className={styles.marginTop}>
+                <Parallax className="custom-class" x={[-5, 5]} y={[-20, 20]} tagOuter="figure">
+                        {/* Who we Serve */}
+                        <Grid container direction="row" justify="center" alignItems="center">
+                            <h2>How We Serve</h2>
+                        </Grid>
+                        <Grid>
+                            <HowWeServe />
+                        </Grid>
+                </Parallax>
+                    </Container>
+            </ParallaxProvider>
 
             <br/><br/><br/>
             <Container disableGutters={true} maxWidth={false} className={styles.footer}>
