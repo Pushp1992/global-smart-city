@@ -10,11 +10,13 @@ import TagLine from '../src/component/HomeComponent/TagLine/tag-line';
 import Statistics from '../src/component/HomeComponent/Statistics/statistics';
 import OurClients from '../src/component/HomeComponent/OurClients/clients';
 import HowWeServe from '../src/component/HomeComponent/HowWeServe/HowWeServe';
+import OurPurpose from '../src/component/HomeComponent/OurPurpose/purpose';
+
 import PreFooter from '../src/component/Footer/pre-footer';
 import Footer from '../src/component/Footer/footer';
 
+// import ParallaxContent from '../src/component/Parallax/parallax';
 import { Parallax, ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
-import ParallaxImage from '../src/component/Parallax/parallax';
 
 function HomePage() {
     const BASE_URL = "https://res.cloudinary.com/pushpcloud/image/upload";
@@ -37,8 +39,8 @@ function HomePage() {
             </Container>
 
             <ParallaxProvider>
-                    <Container className={styles.benchmarking}>
-                <Parallax className="custom-class" x={[-5, 5]} y={[-20, 20]} tagOuter="figure">
+                <Container className={styles.benchmarking}>
+                    <Parallax className="custom-class" x={[-5, 5]} y={[-20, 20]} tagOuter="figure">
                         {/* Includes Information ON Basic Statistics */}
                         <Grid container direction="row" justify="center" alignItems="center">
                             <h2>Our BenchMarkings</h2>
@@ -46,11 +48,11 @@ function HomePage() {
                         <Grid>
                             <Statistics />
                         </Grid>
-                </Parallax>
-                    </Container>
+                    </Parallax>
+                </Container>
 
-                    <Container className={styles.marginTop}>
-                <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+                <Container className={styles.marginTop}>
+                    <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
                         {/* Who we Serve */}
                         <Grid container direction="row" justify="center" alignItems="center">
                             <h2>Who We Serve</h2>
@@ -58,11 +60,11 @@ function HomePage() {
                         <Grid>
                             <OurClients />
                         </Grid>
-                </Parallax>
-                    </Container>
+                    </Parallax>
+                </Container>
 
-                    <Container className={styles.marginTop}>
-                <Parallax className="custom-class" x={[-5, 5]} y={[-20, 20]} tagOuter="figure">
+                <Container className={styles.marginTop}>
+                    <Parallax className="custom-class" x={[-5, 5]} y={[-20, 20]} tagOuter="figure">
                         {/* Who we Serve */}
                         <Grid container direction="row" justify="center" alignItems="center">
                             <h2>How We Serve</h2>
@@ -70,9 +72,19 @@ function HomePage() {
                         <Grid>
                             <HowWeServe />
                         </Grid>
-                </Parallax>
-                    </Container>
+                    </Parallax>
+                </Container>
             </ParallaxProvider>
+
+            <Container className={styles.marginTop}>
+                {/* Who we Serve */}
+                <Grid container direction="row" justify="center" alignItems="center">
+                    <h2>Our Purpose</h2>
+                </Grid>
+                <Grid>
+                    <OurPurpose />
+                </Grid>
+            </Container>
 
             <br/><br/><br/>
             <Container disableGutters={true} maxWidth={false} className={styles.footer}>
