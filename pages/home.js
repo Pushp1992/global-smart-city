@@ -4,18 +4,18 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import styles from '../styles/home.module.scss';
-
 import NavBar from '../src/component/nav-bar';
 import TagLine from '../src/component/HomeComponent/TagLine/tag-line';
 import Statistics from '../src/component/HomeComponent/Statistics/statistics';
 import OurClients from '../src/component/HomeComponent/OurClients/clients';
 import HowWeServe from '../src/component/HomeComponent/HowWeServe/HowWeServe';
 import OurPurpose from '../src/component/HomeComponent/OurPurpose/purpose';
+import OurCapabilities from '../src/component/HomeComponent/Capabilities/capabilities';
+// import Testimonial from '../src/component/HomeComponent/Testimonial/testimonial';
 
 import PreFooter from '../src/component/Footer/pre-footer';
 import Footer from '../src/component/Footer/footer';
 
-// import ParallaxContent from '../src/component/Parallax/parallax';
 import { Parallax, ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
 
 function HomePage() {
@@ -74,17 +74,42 @@ function HomePage() {
                         </Grid>
                     </Parallax>
                 </Container>
-            </ParallaxProvider>
 
-            <Container className={styles.marginTop}>
-                {/* Who we Serve */}
-                <Grid container direction="row" justify="center" alignItems="center">
-                    <h2>Our Purpose</h2>
-                </Grid>
-                <Grid>
-                    <OurPurpose />
-                </Grid>
-            </Container>
+                <Container className={styles.marginTop}>
+                    {/* Our Purpose */}
+                    <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
+                    <Grid container direction="row" justify="center" alignItems="center">
+                        <h2>Our Purpose</h2>
+                    </Grid>
+                    <Grid>
+                        <OurPurpose />
+                    </Grid>
+                    </Parallax>
+                </Container>
+
+                <Container className={styles.marginTop}>
+                    {/* Our Capabilities */}
+                    <Parallax className="custom-class" x={[-5, 5]} y={[-20, 20]} tagOuter="figure">
+                    <Grid container direction="row" justify="center" alignItems="center">
+                        <h2>Our Capabilities</h2>
+                    </Grid>
+                    <Grid>
+                        <OurCapabilities />
+                    </Grid>
+                    </Parallax>
+                </Container>
+
+                {/* <Container className={styles.marginTop}>
+                    <Parallax className="custom-class" x={[-5, 5]} y={[-20, 20]} tagOuter="figure">
+                    <Grid container direction="row" justify="center" alignItems="center">
+                        <h2>Our Testimonail</h2>
+                    </Grid>
+                    <Grid>
+                        <Testimonial />
+                    </Grid>
+                    </Parallax>
+                </Container> */}
+            </ParallaxProvider>
 
             <br/><br/><br/>
             <Container disableGutters={true} maxWidth={false} className={styles.footer}>

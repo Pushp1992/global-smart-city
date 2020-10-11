@@ -82,7 +82,7 @@ export default function OurPurpose() {
         </Grid>
         <Grid item xs={4}>
         <ParallaxProvider>
-        <Parallax className="custom-class" y={[-2, 100]} tagOuter="figure">
+        <Parallax className="custom-class" y={[-2, 80]} tagOuter="figure">
           <div style={styles.typography}>
             <Typography variant="h6" gutterBottom>
               Accrediting Decision makers to accomplish Valorous results
