@@ -78,14 +78,14 @@ export default function NavBar() {
     return (
         <div className={classes.root}>
             <Grid container spacing={3}>
-                <Grid item md={3}>
+                <Grid item md={4}>
                     <div className={classes.paper}>Global Smart City</div>
                 </Grid>
                 {/* <Grid item md={6}>
                      <Paper className={classes.paper}>md=6</Paper>
                  </Grid> */}
 
-                <Grid item lg={9}>
+                <Grid item lg={8}>
                     <Button variant="outlined" color="primary" aria-controls="customized-menu" aria-haspopup="true"
                         onClick={handleOpen} className={styles.margin}>
                         COMPANY
@@ -189,12 +189,12 @@ export default function NavBar() {
                     <Button variant="outlined" color="primary" className={styles.margin}>
                         <Link href="/about"><a>SOLUTIONS</a></Link>
                     </Button>
-                    <Button variant="outlined" color="primary" className={styles.margin}>
+                    {/* <Button variant="outlined" color="primary" className={styles.margin}>
                         <Link href="/about"><a>SOLUTIONS</a></Link>
                     </Button>
                     <Button variant="outlined" color="primary" className={styles.margin}>
                         <Link href="/about"><a>SOLUTIONS</a></Link>
-                    </Button>
+                    </Button> */}
                 </Grid>
             </Grid>
         </div>
