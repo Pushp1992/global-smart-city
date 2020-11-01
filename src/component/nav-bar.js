@@ -15,12 +15,22 @@ const BASE_URL= "https://res.cloudinary.com/pushpcloud/image/upload/w_100,h_100,
 
 const styles = {
     buttonTheme: {
-        marginRight: '3rem !important',
+        marginRight: '1rem !important',
         backgroundColor: 'teal'
     },
     root: {
         flexGrow: 1,
     },
+    textField: {
+        width: '20rem',
+        borderRadius: '20px',
+        padding: '10px',
+        backgroundColor: '#79b3b3',
+        display: 'inline-flex !important',
+        '&:focus': {
+            backgroundColor: 'white'
+        }
+    }
 };
 
 const StyledMenu = withStyles({
@@ -76,6 +86,9 @@ export default function NavBar() {
                         <img src={`${BASE_URL}/smart-city/company-logo_qel7bw`} alt="logo" />
                     </div>
                 </Grid>
+                {/* <Grid item md={2}>
+                    <input type="text" name="search" placeholder="Enter Search Value" style={styles.textField} />
+                </Grid> */}
                 <Grid item md={11}>
                     <Button variant="contained" color="primary" aria-controls="customized-menu" aria-haspopup="true"
                         onClick={handleOpen} style={styles.buttonTheme}>
@@ -180,9 +193,12 @@ export default function NavBar() {
                     <Button variant="contained" color="primary" style={styles.buttonTheme}>
                         <Link href="/about"><a>LOGIN</a></Link>
                     </Button>
-                    <Button variant="contained" color="primary" style={styles.buttonTheme}>
-                        <Link href="/about"><a>SEARCH</a></Link>
-                    </Button>
+
+                        <input type="text" name="search" placeholder="Enter Search Value" style={styles.textField} />
+      
+                    {/* <Button variant="contained" color="primary" style={styles.buttonTheme}>
+                        SEARCH
+                    </Button> */}
                 </Grid>
             </Grid>
         </div>
