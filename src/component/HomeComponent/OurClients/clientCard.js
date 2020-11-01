@@ -40,6 +40,7 @@ const styles = {
   },
   button: {
     margin: 2,
+    backgroundColor: 'teal'
   },
 }
 

@@ -32,9 +32,6 @@ const styles = {
   expand: {
     transform: "rotate(0deg)",
     marginLeft: "auto",
-    // transition: theme.transitions.create("transform", {
-    //   duration: theme.transitions.duration.shortest,
-    // }),
   },
   expandOpen: {
     transform: "rotate(180deg)",
@@ -44,6 +41,9 @@ const styles = {
   },
   likeBtn: {
     backgroundColor: red[500],
+  },
+  subheading: {
+    color: 'teal'
   }
 };
 
@@ -77,7 +77,7 @@ export default function HowWeServe() {
                   />
                   <CardContent>
                     <Typography variant="body2" color="textSecondary" component="p">
-                      {data.subheading}
+                      <label style={styles.subheading}>{data.subheading}</label>
                     </Typography>
                   </CardContent>
                   <CardActions disableSpacing>
