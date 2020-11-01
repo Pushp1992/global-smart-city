@@ -8,7 +8,7 @@ const clients = [
     id: 1,
     name: "International Agencies",
     heading: "Helping International Agencies to excel",
-    image: `${IMG_URL}/int-agencies_m8m9vq`,
+    image: `${IMG_URL}/int-agencies_zyetix`,
     baseImage1: `${BASE_IMG_URL}/base-img-13_wtzmwf`,
     baseImage2: `${BASE_IMG_URL}/base-img-11_qezaf7`,
     subheading: `We offer Programme-Project Management Consulting, Government Advisory-Technology & Business services for international agencies
@@ -21,7 +21,7 @@ const clients = [
     id: 2,
     name: "Research Organization",
     heading: "Helping Research Organization to excel",
-    image: `${IMG_URL}/research_rh8dnc`,
+    image: `${IMG_URL}/research_arosck`,
     baseImage1: `${BASE_IMG_URL}/base-img-14_ghusvl`,
     baseImage2: `${BASE_IMG_URL}/base-img-10_xnzcfs`,
     subheading: `Innovation management and prototyping of the innovative solutions to solve urban as well as rural issues should be prime focus
@@ -33,7 +33,7 @@ const clients = [
     id: 3,
     name: "National Govt",
     heading: "Helping National Govt to excel",
-    image: `${IMG_URL}/national_wnm8cg`,
+    image: `${IMG_URL}/national_gbkdor`,
     baseImage1: `${BASE_IMG_URL}/base-img-12_wzfzzs`,
     baseImage2: `${BASE_IMG_URL}/base-img-4_grcdpa`,
     subheading: `We as a team with diverse geographical and technical experience use technology and smarter approaches to deliver better services
@@ -46,7 +46,7 @@ const clients = [
     id: 4,
     name: "MNCs/industries",
     heading: "Helping MNCs/industries to excel",
-    image: `${IMG_URL}/MNC_llvgk5`,
+    image: `${IMG_URL}/MNC_yuk9r8`,
     baseImage1: `${BASE_IMG_URL}/base-img-1_j0pdvq`,
     baseImage2: `${BASE_IMG_URL}/base-img-5_d4jbhc`,
     subheading: `We identify key areas of focus to enable industries in effectively mobilising their resource. We assist in stabilising
@@ -58,7 +58,7 @@ const clients = [
     id: 5,
     name: "Think Tanks",
     heading: "Helping Think Tanks to excel",
-    image: `${IMG_URL}/think_nn2e5r`,
+    image: `${IMG_URL}/Think-tank_hn0cch`,
     baseImage1: `${BASE_IMG_URL}/base-img-6_ojszwi`,
     baseImage2: `${BASE_IMG_URL}/base-img-9_st2wol`,
     subheading: `Think Tanks are extremely instrumental part of any Urban or Rural setting transformation to solve urban-rural issues,
@@ -71,7 +71,7 @@ const clients = [
     id: 6,
     name: "NGO(s)",
     heading: "Helping Non Government organization to excel",
-    image: `${IMG_URL}/ngo_bnv1d8`,
+    image: `${IMG_URL}/NGO_jrmqdy`,
     baseImage1: `${BASE_IMG_URL}/base-img-7_z23vs9`,
     baseImage2: `${BASE_IMG_URL}/base-img-3_dlvdts`,
     subheading: `We assist them in finding out the important sociological and economic issues of the society by focussing upon transformation.
@@ -82,7 +82,7 @@ const clients = [
     id: 7,
     name: "Local Government",
     heading: "Helping Local Government",
-    image: `${IMG_URL}/local_ybmda0`,
+    image: `${IMG_URL}/local_rcymnv`,
     baseImage1: `${BASE_IMG_URL}/base-img-2_fb9owi`,
     baseImage2: `${BASE_IMG_URL}/base-img-8_xtwjhp`,
     subheading: `Local Governments play the most significant role in turban transformation programmes-projects, like smart cities have been either
