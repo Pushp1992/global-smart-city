@@ -19,20 +19,30 @@ import Footer from '../src/component/Footer/footer';
 import { Parallax, ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
 
 function HomePage() {
-    const BASE_URL = "https://res.cloudinary.com/pushpcloud/image/upload";
+    // const BASE_URL = "https://res.cloudinary.com/pushpcloud/image/upload";
+    const BASE_URL = "https://res.cloudinary.com/pushpcloud/video/upload/v1604220257";
 
     return (
         <div>
             {/* Includes Main Image with NavBar and TagLine */}
             <Container disableGutters={true} maxWidth={false}>
-                <Grid item xs className={styles.imagePosition}>
+            <Grid item md={12} className={styles.navBarPosition}>
+                <NavBar />
+            </Grid>
+            </Container>
+
+            <Container disableGutters={true} maxWidth={false}>
+                <Grid style={{width: '100%'}} item xs className={styles.imagePosition}>
                     <Paper elevation={3}>
-                        <img src={`${BASE_URL}/smart-city/img-1_udpav4`} alt="image" className={styles.imageStyle} />
+                        <video className={styles.imageStyle} controls={false} autoplay="true" loop={true} muted={true}>
+                            <source src={`${BASE_URL}/smart-city/intro-video_hwhsp3`} type="video/mp4"/>
+                        </video>
+                        {/* <iframe src={`${BASE_URL}/smart-city/intro-video_hwhsp3`} className={styles.imageStyle} /> */}
                     </Paper>
                 </Grid>
-                <Grid item md={12} className={styles.navBarPosition}>
+                {/* <Grid item md={12} className={styles.navBarPosition}>
                     <NavBar />
-                </Grid>
+                </Grid> */}
                 <Grid container justify="flex-end" className={styles.tagLinePosition}>
                     <TagLine />
                 </Grid>

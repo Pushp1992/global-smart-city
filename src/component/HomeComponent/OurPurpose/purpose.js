@@ -45,7 +45,7 @@ export default function OurPurpose() {
       <Grid container spacing={1}>
         <Grid item xs={8}>
           <Grid container>
-            <Grid item xs={12} spacing={3}>
+            <Grid item xs={12}>
               <Card style={styles.root}>
                 <CardActionArea>
                   <CardMedia
@@ -56,7 +56,7 @@ export default function OurPurpose() {
                 </CardActionArea>
               </Card>
             </Grid>
-            <Grid item xs={6} spacing={3}>
+            <Grid item xs={6}>
               <Card style={styles.root}>
                 <CardActionArea>
                   <CardMedia
@@ -67,7 +67,7 @@ export default function OurPurpose() {
                 </CardActionArea>
               </Card>
             </Grid>
-            <Grid item xs={6} spacing={3}>
+            <Grid item xs={6}>
               <Card style={styles.root}>
                 <CardActionArea>
                   <CardMedia
