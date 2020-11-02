@@ -1,20 +1,13 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
-import Paper from "@material-ui/core/Paper";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import { Parallax, ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
 import Grid from "@material-ui/core/Grid";
 import {Purpose} from '../../../utils/ourPurpose';
 
 const styles = {
-  container: {
-    display: "grid",
-    gridTemplateColumns: "repeat(12, 1fr)",
-  },
   cardRoot: {
     maxWidth: 345,
   },
@@ -22,19 +15,9 @@ const styles = {
     flexGrow: 1,
     marginTop: '2rem'
   },
-  root: {
-    maxWidth: 345,
-  },
   media: {
     height: 0,
     paddingTop: "56.25%", // 16:9
-  },
-  expand: {
-    transform: "rotate(0deg)",
-    marginLeft: "auto",
-  },
-  expandOpen: {
-    transform: "rotate(180deg)",
   },
   prefix: {
     color: '#37abab',

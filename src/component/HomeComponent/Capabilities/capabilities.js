@@ -72,7 +72,7 @@ export default function OurCapabilities() {
                       title={data.tagLine}
                     />
                     <CardContent>
-                    <Grid container spacing={3}>
+                    <Grid container spacing={3} direction="row">
                       <Grid item xs={12}>
                         <Button variant="contained" color="primary" style={styles.button}>{data.heading}</Button>
                       </Grid>

@@ -9,6 +9,7 @@ import TagLine from '../src/component/HomeComponent/TagLine/tag-line';
 import Statistics from '../src/component/HomeComponent/Statistics/statistics';
 import OurClients from '../src/component/HomeComponent/OurClients/clients';
 import HowWeServe from '../src/component/HomeComponent/HowWeServe/HowWeServe';
+import OurStrategy from '../src/component/HomeComponent/Strategy/strategy';
 import OurPurpose from '../src/component/HomeComponent/OurPurpose/purpose';
 import OurCapabilities from '../src/component/HomeComponent/Capabilities/capabilities';
 // import Testimonial from '../src/component/HomeComponent/Testimonial/testimonial';
@@ -79,7 +80,15 @@ function HomePage() {
                         </Grid>
                     </Parallax>
                 </Container>
+                </ParallaxProvider>
 
+                <Container disableGutters={true} maxWidth={false} className={styles.marginTop}>
+                    <Grid>
+                        <OurStrategy />
+                    </Grid>
+                </Container> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+                <ParallaxProvider>
                 <Container maxWidth={false} className={styles.marginTop}>
                     {/* Our Purpose */}
                     <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
@@ -91,17 +100,16 @@ function HomePage() {
                     </Grid>
                     </Parallax>
                 </Container>
+                </ParallaxProvider>
 
                 <Container maxWidth={false} className={styles.marginTop}>
                     {/* Our Capabilities */}
-                    <Parallax className="custom-class" x={[-5, 5]} y={[-20, 20]} tagOuter="figure">
                     <Grid container direction="row" justify="center" alignItems="center">
                         <h2>Our Capabilities</h2>
                     </Grid>
                     <Grid>
                         <OurCapabilities />
                     </Grid>
-                    </Parallax>
                 </Container>
 
                 {/* <Container className={styles.marginTop}>
@@ -114,7 +122,6 @@ function HomePage() {
                     </Grid>
                     </Parallax>
                 </Container> */}
-            </ParallaxProvider>
 
             <br/><br/><br/>
             <Container disableGutters={true} maxWidth={false} className={styles.footer}>

@@ -8,7 +8,6 @@ import MenuItem from '@material-ui/core/MenuItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import SendIcon from '@material-ui/icons/Send';
-
 import Link from 'next/link'
 
 const BASE_URL= "https://res.cloudinary.com/pushpcloud/image/upload/w_100,h_100,c_scale/v1604230842";
@@ -24,7 +23,6 @@ const styles = {
     textField: {
         width: '20rem',
         padding: '10px',
-        // backgroundColor: '#79b3b3',
         backgroundColor: 'smoke-white',
         display: 'inline-flex !important',
         '&:focus': {
