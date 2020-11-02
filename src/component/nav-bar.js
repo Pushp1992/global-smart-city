@@ -23,9 +23,9 @@ const styles = {
     },
     textField: {
         width: '20rem',
-        borderRadius: '20px',
         padding: '10px',
-        backgroundColor: '#79b3b3',
+        // backgroundColor: '#79b3b3',
+        backgroundColor: 'smoke-white',
         display: 'inline-flex !important',
         '&:focus': {
             backgroundColor: 'white'
