@@ -25,6 +25,7 @@ const styles = {
         padding: '10px',
         backgroundColor: 'smoke-white',
         display: 'inline-flex !important',
+        marginRight: '1rem !important',
         '&:focus': {
             backgroundColor: 'white'
         }
@@ -78,16 +79,14 @@ export default function NavBar() {
 
     return (
         <div style={styles.root}>
-            <Grid container spacing={3} alignItems="center">
+            <Grid container direction="row" spacing={3} alignItems="center" >
                 <Grid item md={1}>
                     <div>
                         <img src={`${BASE_URL}/smart-city/company-logo_qel7bw`} alt="logo" />
                     </div>
                 </Grid>
-                {/* <Grid item md={2}>
-                    <input type="text" name="search" placeholder="Enter Search Value" style={styles.textField} />
-                </Grid> */}
                 <Grid item md={11}>
+                <Grid container direction="row" spacing={3} justify="flex-end">
                     <Button variant="contained" color="primary" aria-controls="customized-menu" aria-haspopup="true"
                         onClick={handleOpen} style={styles.buttonTheme}>
                         COMPANY
@@ -188,15 +187,14 @@ export default function NavBar() {
                     <Button variant="contained" color="primary" style={styles.buttonTheme}>
                         <Link href="/about"><a>OBSERVATORY</a></Link>
                     </Button>
+                    <input type="text" name="search" placeholder="Enter Search Value" style={styles.textField} />
                     <Button variant="contained" color="primary" style={styles.buttonTheme}>
                         <Link href="/about"><a>LOGIN</a></Link>
-                    </Button>
-
-                        <input type="text" name="search" placeholder="Enter Search Value" style={styles.textField} />
-      
+                    </Button>      
                     {/* <Button variant="contained" color="primary" style={styles.buttonTheme}>
                         SEARCH
                     </Button> */}
+                </Grid>
                 </Grid>
             </Grid>
         </div>
