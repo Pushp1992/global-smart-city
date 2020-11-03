@@ -30,47 +30,47 @@ function Statistics() {
   return (
     <>
       <Paper square={true}>
-        <Grid container spacing={3}>
-          <Grid item xs>
+        <Grid container direction="row" spacing={1} justify="center" alignItems="center">
+          <Grid item md>
             <div>
               <img src={cityImg} alt="stat_img" />
             </div>
             <h3>100</h3>
             <label style={styles.label}>Cities</label>
           </Grid>
-          <Grid item xs>
+          <Grid item md>
             <div>
               <img src={catalogImg} alt="stat_img" />
             </div>
-            <h3>1,979</h3>
+            <h3>979</h3>
             <label style={styles.label}>Catloges</label>
           </Grid>
-          <Grid item xs>
+          <Grid item md>
             <div>
               <img src={resourceImg} alt="stat_img" />
             </div>
-            <h3>2,593</h3>
+            <h3>593</h3>
             <label style={styles.label}>Resources</label>
           </Grid>
-          <Grid item xs>
+          <Grid item md>
             <div>
               <img src={apisImg} alt="stat_img" />
             </div>
             <h3>142</h3>
             <label style={styles.label}>APIs</label>
           </Grid>
-          <Grid item xs>
+          <Grid item md>
             <div>
               <img src={viewsImg} alt="stat_img" />
             </div>
-            <h3>190,342</h3>
+            <h3>4,342</h3>
             <label style={styles.label}>Views</label>
           </Grid>
-          <Grid item xs>
+          <Grid item md>
             <div>
               <img src={downloadImg} alt="stat_img" />
             </div>
-            <h3>12,343</h3>
+            <h3>343</h3>
             <label style={styles.label}>Downloads To Date</label>
           </Grid>
         </Grid>

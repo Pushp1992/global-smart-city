@@ -27,7 +27,7 @@ const styles = {
     marginBottom: 10,
   },
   cover: {
-    width: 550,
+    width: 889,
   },
   baseCover: {
     width: 80,
