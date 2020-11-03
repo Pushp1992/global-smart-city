@@ -1,22 +1,14 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
 import { Capabilities } from "../../../utils/capabilities";
-
-import CardHeader from "@material-ui/core/CardHeader";
 
 import {Purpose} from '../../../utils/ourPurpose';
 
 const styles = {
-  container: {
-    display: "grid",
-    gridTemplateColumns: "repeat(12, 1fr)",
-  },
   cardRoot: {
     maxWidth: 345,
   },
@@ -24,30 +16,10 @@ const styles = {
     flexGrow: 1,
     marginTop: "2rem",
   },
-  root: {
-    maxWidth: 345,
-  },
   media: {
     height: 0,
     paddingTop: "56.25%", // 16:9
     width: '30rem'
-  },
-  expand: {
-    transform: "rotate(0deg)",
-    marginLeft: "auto",
-  },
-  expandOpen: {
-    transform: "rotate(180deg)",
-  },
-  prefix: {
-    color: "#37abab",
-    fontWeight: "bold",
-  },
-  subHeading: {
-    color: "teal",
-  },
-  subheading1: {
-    fontSize: "medium",
   },
   button: {
     margin: 2,

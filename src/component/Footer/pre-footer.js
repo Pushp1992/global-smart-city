@@ -6,7 +6,7 @@ export default function PreFooter() {
     return (
         <>
             <div>
-                <img src={`${FOOTER_BASE_URL}/pre-footer-img_gmqdvp`} alt="image" className={styles.footerImageStyle} />
+                <img src={`${FOOTER_BASE_URL}/pre-footer_kirdxc`} alt="image" className={styles.footerImageStyle} />
             </div>
         </>
     )

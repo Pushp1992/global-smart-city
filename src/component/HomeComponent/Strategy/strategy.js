@@ -45,12 +45,12 @@ const StrategyCard = () => {
     <div style={styles.marginTop}>
         <Grid container direction="row" justify="center" alignItems="flex-end" wrap="nowrap" spacing={2}>
             <Grid item xs={3}>
-                <Typography variant="h4" style={{color: 'aqua;'}}>Our Strategy</Typography>
+                <Typography variant="h4" style={{color: 'aqua'}}>Our Strategy</Typography>
             </Grid> <br/>
         </Grid>
         <Grid container direction="row" justify="center" alignItems="flex-end" wrap="nowrap" spacing={2}>
             <Grid item xs={8}>
-            <Typography variant="h5" style={{color: 'burlywood;'}}>{content.heading}</Typography>
+            <Typography variant="h5" style={{color: 'burlywood'}}>{content.heading}</Typography>
             </Grid>
         </Grid>{" "}
         <br />

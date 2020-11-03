@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import styles from '../styles/home.module.scss';
 import NavBar from '../src/component/nav-bar';
 import TagLine from '../src/component/HomeComponent/TagLine/tag-line';
-import Statistics from '../src/component/HomeComponent/Statistics/statistics';
+import {Statistics, ValueProposition} from '../src/component/HomeComponent/Statistics/statistics';
 import OurClients from '../src/component/HomeComponent/OurClients/clients';
 import HowWeServe from '../src/component/HomeComponent/HowWeServe/HowWeServe';
 import OurStrategy from '../src/component/HomeComponent/Strategy/strategy';
@@ -39,7 +39,7 @@ function HomePage() {
                         </video>
                     </Paper>
                 </Grid>
-                <Grid container justify="flex-end" className={styles.tagLinePosition}>
+                <Grid container direction="column" justify="flex-end" alignItems="center" className={styles.tagLinePosition}>
                     <TagLine />
                 </Grid>
             </Container>
@@ -53,6 +53,18 @@ function HomePage() {
                         </Grid>
                         <Grid>
                             <Statistics />
+                        </Grid>
+                    </Parallax>
+                </Container>
+
+                <Container maxWidth={false} className={styles.marginTop}>
+                    <Parallax className="custom-class" x={[-5, 5]} y={[-20, 20]} tagOuter="figure">
+                        {/* Includes Information ON Basic Statistics */}
+                        <Grid container direction="row" justify="center" alignItems="center">
+                            <h2>Our Unique Value Propositions</h2>
+                        </Grid>
+                        <Grid>
+                            <ValueProposition />
                         </Grid>
                     </Parallax>
                 </Container>
@@ -84,6 +96,7 @@ function HomePage() {
 
                 <Container disableGutters={true} maxWidth={false} className={styles.marginTop}>
                     <Grid>
+                        {/* Our Strategy */}
                         <OurStrategy />
                     </Grid>
                 </Container> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
