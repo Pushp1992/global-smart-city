@@ -118,11 +118,21 @@ export default function Footer() {
       >
         <Grid item xs={3}>
           <div style={styles.root}>
-            <Avatar alt="facebook" src={fbImg} />
-            <Avatar alt="instagram" src={instaImg} />
-            <Avatar alt="whatsapp" src={wappImg} />
-            <Avatar alt="tweeter" src={tweeterImg} />
-            <Avatar alt="linkedin" src={linkedinImg} />
+            <a href="https://www.facebook.com/pg/Smart-Development-Professionals-LLC-102758108292688" target="_blank">
+              <Avatar alt="facebook" src={fbImg} />
+            </a>
+            <a href="https://www.instagram.com/sdpgroups/" target="_blank">
+              <Avatar alt="instagram" src={instaImg} />
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=8743841659" target="_blank">
+              <Avatar alt="whatsapp" src={wappImg} />
+            </a>
+            <a href="https://twitter.com/SmartSdp" target="_blank">
+              <Avatar alt="tweeter" src={tweeterImg} />
+            </a>
+            <a href="https://www.linkedin.com/company/smart-development-professionals/" target="_blank">
+              <Avatar alt="linkedin" src={linkedinImg} />
+            </a>
           </div>
         </Grid>
         <Grid item xs={4}>
