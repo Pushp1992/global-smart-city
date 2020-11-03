@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 
@@ -9,25 +8,29 @@ import MenuItem from '@material-ui/core/MenuItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import SendIcon from '@material-ui/icons/Send';
-
 import Link from 'next/link'
-import styles from '../../styles/nav-bar.module.scss';
 
-const useStyles = makeStyles((theme) => ({
-    paper: {
-        padding: theme.spacing(3),
-        textAlign: 'left',
-        color: theme.palette.text.secondary,
-        color: 'white !important',
-        backgroundColor: 'transparent !important'
+const BASE_URL= "https://res.cloudinary.com/pushpcloud/image/upload/w_100,h_100,c_scale/v1604230842";
+
+const styles = {
+    buttonTheme: {
+        marginRight: '1rem !important',
+        backgroundColor: 'teal'
     },
     root: {
         flexGrow: 1,
     },
-    margin: {
-        marginRight: '1rem'
+    textField: {
+        width: '20rem',
+        padding: '10px',
+        backgroundColor: 'smoke-white',
+        display: 'inline-flex !important',
+        marginRight: '1rem !important',
+        '&:focus': {
+            backgroundColor: 'white'
+        }
     }
-}));
+};
 
 const StyledMenu = withStyles({
     paper: {
@@ -64,9 +67,8 @@ const StyledMenuItem = withStyles((theme) => ({
 }))(MenuItem);
 
 export default function NavBar() {
-    const classes = useStyles();
-    const [anchorEl, setAnchorEl] = React.useState(null);
 
+    const [anchorEl, setAnchorEl] = React.useState(null);
     const handleOpen = (event) => {
         setAnchorEl(event.currentTarget);
     };
@@ -76,18 +78,17 @@ export default function NavBar() {
     };
 
     return (
-        <div className={classes.root}>
-            <Grid container spacing={3}>
-                <Grid item md={3}>
-                    <div className={classes.paper}>Global Smart City</div>
+        <div style={styles.root}>
+            <Grid container direction="row" spacing={3} alignItems="center" >
+                <Grid item md={1}>
+                    <div>
+                        <img src={`${BASE_URL}/smart-city/company-logo_qel7bw`} alt="logo" />
+                    </div>
                 </Grid>
-                {/* <Grid item md={6}>
-                     <Paper className={classes.paper}>md=6</Paper>
-                 </Grid> */}
-
-                <Grid item lg={9}>
-                    <Button variant="outlined" color="primary" aria-controls="customized-menu" aria-haspopup="true"
-                        onClick={handleOpen} className={styles.margin}>
+                <Grid item md={11}>
+                <Grid container direction="row" spacing={3} justify="flex-end">
+                    <Button variant="contained" color="primary" aria-controls="customized-menu" aria-haspopup="true"
+                        onClick={handleOpen} style={styles.buttonTheme}>
                         COMPANY
                     </Button>
                     <StyledMenu id="customized-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose} keepMounted>
@@ -125,8 +126,8 @@ export default function NavBar() {
                         </StyledMenuItem>
                     </StyledMenu>
 
-                    <Button variant="outlined" color="primary" aria-controls="customized-menu" aria-haspopup="true"
-                        onClick={handleOpen} className={styles.margin}>
+                    <Button variant="contained" color="primary" aria-controls="customized-menu" aria-haspopup="true"
+                        onClick={handleOpen} style={styles.buttonTheme}>
                         Services
                     </Button>
                     <StyledMenu id="customized-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose} keepMounted>
@@ -180,100 +181,22 @@ export default function NavBar() {
                         </StyledMenuItem>
                     </StyledMenu>
 
-                    <Button variant="outlined" color="primary" className={styles.margin}>
-                        <Link href="/about"><a>SOLUTIONS</a></Link>
+                    <Button variant="contained" color="primary" style={styles.buttonTheme}>
+                        <Link href="/about"><a>INDUSTRIES</a></Link>
                     </Button>
-                    <Button variant="outlined" color="primary" className={styles.margin}>
-                        <Link href="/about"><a>SOLUTIONS</a></Link>
+                    <Button variant="contained" color="primary" style={styles.buttonTheme}>
+                        <Link href="/about"><a>OBSERVATORY</a></Link>
                     </Button>
-                    <Button variant="outlined" color="primary" className={styles.margin}>
-                        <Link href="/about"><a>SOLUTIONS</a></Link>
-                    </Button>
-                    <Button variant="outlined" color="primary" className={styles.margin}>
-                        <Link href="/about"><a>SOLUTIONS</a></Link>
-                    </Button>
-                    <Button variant="outlined" color="primary" className={styles.margin}>
-                        <Link href="/about"><a>SOLUTIONS</a></Link>
-                    </Button>
+                    <input type="text" name="search" placeholder="Enter Search Value" style={styles.textField} />
+                    <Button variant="contained" color="primary" style={styles.buttonTheme}>
+                        <Link href="/about"><a>LOGIN</a></Link>
+                    </Button>      
+                    {/* <Button variant="contained" color="primary" style={styles.buttonTheme}>
+                        SEARCH
+                    </Button> */}
+                </Grid>
                 </Grid>
             </Grid>
         </div>
     )
 }
-
-
-
-// <Grid container spacing={3}>
-//     <Grid item md={3}>
-//         <Paper className={classes.paper}>Global Smart City</Paper>
-//     </Grid>
-//     {/* <Grid item md={6}>
-//                     <Paper className={classes.paper}>md=6</Paper>
-//                 </Grid> */}
-
-//     <Grid item xs>
-//         <Paper className={classes.paper}>
-//             <Button variant="outlined" color="primary">
-//                 <Link href="/about"><a>SOLUTIONS</a></Link>
-//             </Button>
-//         </Paper>
-//     </Grid>
-//     <Grid item xs>
-//         <Paper className={classes.paper}>
-//             <div>
-                // <Button variant="outlined" color="primary" aria-controls="customized-menu" aria-haspopup="true" onClick={handleOpen}>
-                //     COMPANY
-                //             </Button>
-                // <StyledMenu id="customized-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose} keepMounted>
-                //     <StyledMenuItem>
-                //         <ListItemIcon>
-                //             <SendIcon fontSize="small" />
-                //         </ListItemIcon>
-                //         <ListItemText primary="About Us" />
-                //     </StyledMenuItem>
-                //     <StyledMenuItem>
-                //         <ListItemIcon>
-                //             <SendIcon fontSize="small" />
-                //         </ListItemIcon>
-                //         <ListItemText primary="What we do" />
-                //     </StyledMenuItem>
-                //     <StyledMenuItem>
-                //         <ListItemIcon>
-                //             <SendIcon fontSize="small" />
-                //         </ListItemIcon>
-                //         <ListItemText primary="What we serve" />
-                //     </StyledMenuItem>
-                // </StyledMenu>
-//             </div>
-//         </Paper>
-//     </Grid>
-//     <Grid item xs>
-//         <Paper className={classes.paper}>
-//             <Button variant="outlined" color="primary">
-//                 <Link href="/about"><a>VENDORS</a></Link>
-//             </Button>
-//         </Paper>
-//     </Grid>
-//     <Grid item xs>
-//         <Paper className={classes.paper}>
-//             <Button variant="outlined" color="primary">
-//                 <Link href="/about"><a>CONTACT</a></Link>
-//             </Button>
-//         </Paper>
-//     </Grid>
-//     <Grid item>
-//         <Paper className={classes.paper}>
-//             <Button variant="outlined" color="primary">
-//                 <Link href="/about"><a>REQUEST a DEMO</a></Link>
-//             </Button>
-//         </Paper>
-//     </Grid>
-//     <Grid item xs>
-//         <Paper className={classes.paper}>
-//             <Button variant="outlined" color="primary">
-//                 <Link href="/about"><a>LOGIN</a></Link>
-//             </Button>
-//         </Paper>
-//     </Grid>
-
-// </Grid>
