@@ -8,6 +8,7 @@ const webpack = require('webpack');
 require('dotenv').config();
 
 module.exports = {
+  target: "serverless",
 
   webpack: config => {
 
