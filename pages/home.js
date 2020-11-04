@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import styles from '../styles/home.module.scss';
@@ -16,8 +15,6 @@ import OurCapabilities from '../src/component/HomeComponent/Capabilities/capabil
 
 import PreFooter from '../src/component/Footer/pre-footer';
 import Footer from '../src/component/Footer/footer';
-
-import { Parallax, ParallaxProvider, ParallaxBanner } from 'react-scroll-parallax';
 
 function HomePage() {
     const BASE_URL = "https://res.cloudinary.com/pushpcloud/video/upload/v1604220257";
@@ -44,99 +41,65 @@ function HomePage() {
                 </Grid>
             </Container>
 
-            <ParallaxProvider>
-                <Container maxWidth={false} className={styles.benchmarking}>
-                    <Parallax className="custom-class" x={[-5, 5]} y={[-20, 20]} tagOuter="figure">
-                        {/* Includes Information ON Basic Statistics */}
-                        <Grid container direction="row" justify="center" alignItems="center">
-                            <h2>Our BenchMarkings</h2>
-                        </Grid>
-                        <Grid>
-                            <Statistics />
-                        </Grid>
-                    </Parallax>
-                </Container>
+            <Container maxWidth={false} style={{marginTop: '25rem'}}>
+                {/* Includes Information ON Basic Statistics */}
+                <Grid container direction="row" justify="center" alignItems="center">
+                    <h2>Our Unique Value Propositions</h2>
+                </Grid>
+                <Grid>
+                    <ValueProposition />
+                </Grid>
+            </Container>
 
-                <Container maxWidth={false} className={styles.marginTop}>
-                    <Parallax className="custom-class" x={[-5, 5]} y={[-20, 20]} tagOuter="figure">
-                        {/* Includes Information ON Basic Statistics */}
-                        <Grid container direction="row" justify="center" alignItems="center">
-                            <h2>Our Unique Value Propositions</h2>
-                        </Grid>
-                        <Grid>
-                            <ValueProposition />
-                        </Grid>
-                    </Parallax>
-                </Container>
+            <Container maxWidth={false} className={styles.marginTop}>
+                {/* Who we Serve */}
+                <Grid container direction="row" justify="center" alignItems="center">
+                    <h2>Who We Can Help</h2>
+                </Grid>
+                <Grid>
+                    <OurClients />
+                </Grid>
+            </Container>
 
-                <Container maxWidth={false} className={styles.marginTop}>
-                    <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
-                        {/* Who we Serve */}
-                        <Grid container direction="row" justify="center" alignItems="center">
-                            <h2>Who We Can Help</h2>
-                        </Grid>
-                        <Grid>
-                            <OurClients />
-                        </Grid>
-                    </Parallax>
-                </Container>
+            <Container maxWidth={false} className={styles.marginTop}>
+                {/* Who we Serve */}
+                <Grid container direction="row" justify="center" alignItems="center">
+                    <h2>How We Can Help</h2>
+                </Grid>
+                <Grid>
+                    <HowWeServe />
+                </Grid>
+            </Container>
 
-                <Container maxWidth={false} className={styles.marginTop}>
-                    <Parallax className="custom-class" x={[-5, 5]} y={[-20, 20]} tagOuter="figure">
-                        {/* Who we Serve */}
-                        <Grid container direction="row" justify="center" alignItems="center">
-                            <h2>How We Can Help</h2>
-                        </Grid>
-                        <Grid>
-                            <HowWeServe />
-                        </Grid>
-                    </Parallax>
-                </Container>
-                </ParallaxProvider>
 
-                <Container disableGutters={true} maxWidth={false} className={styles.marginTop}>
-                    <Grid>
-                        {/* Our Strategy */}
-                        <OurStrategy />
-                    </Grid>
-                </Container> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <Container disableGutters={true} maxWidth={false} className={styles.marginTop}>
+                <Grid>
+                    {/* Our Strategy */}
+                    <OurStrategy />
+                </Grid>
+            </Container> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-                <ParallaxProvider>
-                <Container maxWidth={false} className={styles.marginTop}>
-                    {/* Our Purpose */}
-                    <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure">
-                    <Grid container direction="row" justify="center" alignItems="center">
-                        <h2>Our Purpose</h2>
-                    </Grid>
-                    <Grid>
-                        <OurPurpose />
-                    </Grid>
-                    </Parallax>
-                </Container>
-                </ParallaxProvider>
+            <Container maxWidth={false} className={styles.marginTop}>
+                {/* Our Purpose */}
+                <Grid container direction="row" justify="center" alignItems="center">
+                    <h2>Our Purpose</h2>
+                </Grid>
+                <Grid>
+                    <OurPurpose />
+                </Grid>
+            </Container>
 
-                <Container maxWidth={false} className={styles.marginTop}>
-                    {/* Our Capabilities */}
-                    <Grid container direction="row" justify="center" alignItems="center">
-                        <h2>Our Capabilities</h2>
-                    </Grid>
-                    <Grid>
-                        <OurCapabilities />
-                    </Grid>
-                </Container>
 
-                {/* <Container className={styles.marginTop}>
-                    <Parallax className="custom-class" x={[-5, 5]} y={[-20, 20]} tagOuter="figure">
-                    <Grid container direction="row" justify="center" alignItems="center">
-                        <h2>Our Testimonail</h2>
-                    </Grid>
-                    <Grid>
-                        <Testimonial />
-                    </Grid>
-                    </Parallax>
-                </Container> */}
+            <Container maxWidth={false} className={styles.marginTop}>
+                {/* Our Capabilities */}
+                <Grid container direction="row" justify="center" alignItems="center">
+                    <h2>Our Capabilities</h2>
+                </Grid>
+                <Grid>
+                    <OurCapabilities />
+                </Grid>
+            </Container>
 
-            <br/><br/><br/>
             <Container disableGutters={true} maxWidth={false} className={styles.footer}>
                 <Grid item xs className={styles.footerImagePosition}>
                     <PreFooter />
