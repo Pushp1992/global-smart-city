@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import styles from '../styles/home.module.scss';
 import NavBar from '../src/component/nav-bar';
 import TagLine from '../src/component/HomeComponent/TagLine/tag-line';
-import {Statistics, ValueProposition} from '../src/component/HomeComponent/Statistics/statistics';
+import {ValueProposition} from '../src/component/HomeComponent/Statistics/statistics';
 import OurClients from '../src/component/HomeComponent/OurClients/clients';
 import HowWeServe from '../src/component/HomeComponent/HowWeServe/HowWeServe';
 import OurStrategy from '../src/component/HomeComponent/Strategy/strategy';
@@ -48,12 +48,6 @@ function HomePage() {
                 </Grid>
                 <Grid>
                     <ValueProposition />
-                </Grid>
-            </Container>
-
-            <Container disableGutters={true} maxWidth={false} className={styles.marginTop}>
-                <Grid item md={12}>
-                    <BannerImage/>
                 </Grid>
             </Container>
 
@@ -107,9 +101,6 @@ function HomePage() {
             </Container>
 
             <Container disableGutters={true} maxWidth={false} className={styles.marginTop}>
-                <Grid item xs className={styles.footerImagePosition}>
-                    <PreFooter />
-                </Grid>
                 <Grid item md={12}>
                     <Footer />
                 </Grid>

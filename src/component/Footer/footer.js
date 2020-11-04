@@ -1,10 +1,7 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
 import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
-import Divider from "@material-ui/core/Divider";
 
 const fbImg = "../images/socialMedia/fb.png";
 const instaImg = "../images/socialMedia/insta.png";
@@ -69,7 +66,7 @@ export default function Footer() {
             <input
               type="text"
               name="email"
-              placeholder="Enter the Search value"
+              placeholder="Enter your email"
               style={styles.textField}
             />
           </div>
@@ -96,15 +93,17 @@ export default function Footer() {
           <ul>
             <li>Social Media</li>
             <li>Google Map</li>
-            <li>Gmail</li>
           </ul>
         </Grid>
         <Grid item xs={2}>
           <h4 style={styles.heading}>CONTACT US</h4>
           <ul>
-            <li>Social Media</li>
-            <li>Google Map</li>
-            <li>Gmail</li>
+            <li>Smart Development Professionals (SDP) LLC</li>
+            <li>112, Capitol trail Network, DE, US-19711</li>
+            <li>Mob: +91-9508250394</li>
+            <li>wapp: +91-8743841659</li>
+            <li>info@sdpgroups.com</li>
+            <li>www.sdpgroups.com</li>
           </ul>
         </Grid>
       </Grid>

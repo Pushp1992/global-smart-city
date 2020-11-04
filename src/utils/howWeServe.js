@@ -5,7 +5,7 @@ const HowWeServeData = [
     id: 1,
     avatar: 'T',
     image: `${IMG_URL}/tech_strategy_dbcm3f`,
-    heading: "Technology Strategy Services",
+    heading: "Technology Services",
     subheading: `We provide a better way to gather requirements, research approaches
         adopted by other cities, best practices to support more effective implementation.
         We use cutting edge technology for gathering all our data.`

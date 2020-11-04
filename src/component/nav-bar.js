@@ -5,9 +5,7 @@ import Button from '@material-ui/core/Button';
 
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import SendIcon from '@material-ui/icons/Send';
 import Link from 'next/link'
 
 const BASE_URL= "https://res.cloudinary.com/pushpcloud/image/upload/w_100,h_100,c_scale/v1604230842";
@@ -282,7 +280,7 @@ export default function NavBar() {
                     <Button variant="contained" color="primary" style={{marginRight:'1rem', backgroundColor:'teal'}}>
                         <Link href="/about"><a>OBSERVATORY</a></Link>
                     </Button>
-                    <input type="text" name="search" placeholder="Enter Search Value" style={styles.textField} />
+                    <input type="text" name="search" placeholder="Search" style={styles.textField} />
                     <Button variant="contained" color="primary" style={{marginRight:'1rem', backgroundColor:'teal'}}>
                         <Link href="/about"><a>LOGIN</a></Link>
                     </Button>      

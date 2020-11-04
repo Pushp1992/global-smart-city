@@ -7,7 +7,7 @@ function PreFooter() {
     return (
         <>
             <div>
-                <img src={`${FOOTER_BASE_URL}/pre-footer_jsjtty`} alt="image" className={styles.footerImageStyle} />
+                <img src={`${FOOTER_BASE_URL}/banner-image_xzisp1`} alt="image" className={styles.footerImageStyle} />
             </div>
         </>
     )

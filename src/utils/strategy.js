@@ -8,7 +8,7 @@ const StrategyData = {
         {
           id: 1,
           heading:"Prospect",
-          subheading: `Identify the urban & Rural challenges in which leads to Chaos.`,
+          subheading: `Identify the urban & Rural challenges which leads to Chaos.`,
           imageUrl: `${IMG_URL}/data-observatory_qu64gr`,
         },
         {
