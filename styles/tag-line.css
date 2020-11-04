@@ -1,0 +1,32 @@
+.tagline {
+  color: floralwhite;
+  margin-top: 18rem;
+}
+
+.heading {
+  /* background-image: linear-gradient(
+    to left,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  ); */
+  -webkit-background-clip: text !important;
+  -moz-background-clip: text !important;
+  background-clip: text !important;
+  color: white;
+  font-family: fantasy, Abel, sansSerif;
+  font-size: 3.4vw;
+  line-height: 6vw;
+  font-weight: bolder;
+  direction: ltr;
+}
+
+.subheading {
+    font-size: 1.4vw;
+    line-height: 2vw;
+    direction: ltr
+}
