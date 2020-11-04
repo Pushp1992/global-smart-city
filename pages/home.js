@@ -13,7 +13,7 @@ import OurPurpose from '../src/component/HomeComponent/OurPurpose/purpose';
 import OurCapabilities from '../src/component/HomeComponent/Capabilities/capabilities';
 // import Testimonial from '../src/component/HomeComponent/Testimonial/testimonial';
 
-import PreFooter from '../src/component/Footer/pre-footer';
+import {PreFooter, BannerImage} from '../src/component/Footer/pre-footer';
 import Footer from '../src/component/Footer/footer';
 
 function HomePage() {
@@ -51,10 +51,16 @@ function HomePage() {
                 </Grid>
             </Container>
 
+            <Container disableGutters={true} maxWidth={false} className={styles.marginTop}>
+                <Grid item md={12}>
+                    <BannerImage/>
+                </Grid>
+            </Container>
+
             <Container maxWidth={false} className={styles.marginTop}>
                 {/* Who we Serve */}
                 <Grid container direction="row" justify="center" alignItems="center">
-                    <h2>Who We Can Help</h2>
+                    <h2>Whom We Can Help</h2>
                 </Grid>
                 <Grid>
                     <OurClients />
@@ -79,7 +85,7 @@ function HomePage() {
                 </Grid>
             </Container> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
-            <Container maxWidth={false} className={styles.marginTop}>
+            <Container maxWidth={false} style={{marginTop: '10rem'}}>
                 {/* Our Purpose */}
                 <Grid container direction="row" justify="center" alignItems="center">
                     <h2>Our Purpose</h2>
@@ -93,18 +99,18 @@ function HomePage() {
             <Container maxWidth={false} className={styles.marginTop}>
                 {/* Our Capabilities */}
                 <Grid container direction="row" justify="center" alignItems="center">
-                    <h2>Our Capabilities</h2>
+                    <h2>Our Core Capabilities</h2>
                 </Grid>
                 <Grid>
                     <OurCapabilities />
                 </Grid>
             </Container>
 
-            <Container disableGutters={true} maxWidth={false} className={styles.footer}>
+            <Container disableGutters={true} maxWidth={false} className={styles.marginTop}>
                 <Grid item xs className={styles.footerImagePosition}>
                     <PreFooter />
                 </Grid>
-                <Grid item md={12} className={styles.footer}>
+                <Grid item md={12}>
                     <Footer />
                 </Grid>
             </Container>

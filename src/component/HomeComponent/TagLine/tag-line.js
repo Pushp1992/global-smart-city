@@ -1,14 +1,13 @@
 const TagLine = () => {
     return (
         <div className="tagline">
-            <div className="heading">Simplyfying Life</div>
-            <div className="heading">Making City Smarter</div>
-            {/* <div style={styles.subheading}>
-                <label>GSC</label> &nbsp;
-                <label style={styles.wordbreak}>data-powered platform enables local <br />
-                governments to effectively procure technology solutions
+            <div className="heading">Smart Development for a better future to the next generation</div>
+            <div className="subheading">
+                <label>We at SDP LLC</label> &nbsp;
+                <label>provide better ideas for solving the Urban &nbsp; Rural problems and delivering the impacts that matter to the  <br />
+                citizen experiences, efficient city management &nbsp; better quality of life by using efficient technologies.
                 </label>
-            </div> */}
+            </div>
         </div>
     )
 }
