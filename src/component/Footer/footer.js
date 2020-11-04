@@ -29,7 +29,8 @@ const styles = {
   },
   lowerFooter: {
     marginTop: "10rem",
-    color: "aqua",
+    fontSize: '13px',
+    color: "white",
   },
   borderStyle: {
     border: "revert",
@@ -68,7 +69,7 @@ export default function Footer() {
             <input
               type="text"
               name="email"
-              placeholder="enter your email..."
+              placeholder="Enter the Search value"
               style={styles.textField}
             />
           </div>

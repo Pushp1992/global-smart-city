@@ -11,6 +11,7 @@ const BASE_URL =
 
 const styles = {
   cardRoot: {
+    color:'white',
     maxWidth: 345,
     backgroundColor: 'black'
   },
@@ -19,15 +20,14 @@ const styles = {
     marginTop: "2rem",
   },
   subHeading: {
-    color: "teal",
+    color: "white",
   },
   imagePosition: {
     position: "absolute",
   },
   strategyPos: {
-    color: "red",
     zIndex: "9",
-    opacity: "0.9",
+    opacity: "0.7",
   },
   imageStyle: {
     imageRendering: "crisp-edges",
@@ -35,6 +35,7 @@ const styles = {
     height: "100%",
   },
   marginTop: {
+    color: 'white',
     marginTop: '10rem'
   }
 };
@@ -45,18 +46,18 @@ const StrategyCard = () => {
     <div style={styles.marginTop}>
         <Grid container direction="row" justify="center" alignItems="flex-end" wrap="nowrap" spacing={2}>
             <Grid item xs={3}>
-                <Typography variant="h4" style={{color: 'aqua'}}>Our Strategy</Typography>
+                <Typography variant="h4">Our Strategy</Typography>
             </Grid> <br/>
         </Grid>
         <Grid container direction="row" justify="center" alignItems="flex-end" wrap="nowrap" spacing={2}>
             <Grid item xs={8}>
-            <Typography variant="h5" style={{color: 'burlywood'}}>{content.heading}</Typography>
+            <Typography variant="h5">{content.heading}</Typography>
             </Grid>
         </Grid>{" "}
         <br />
         <Grid container direction="row" justify="center" alignItems="center" wrap="nowrap" spacing={2}>
             <Grid item xs={8}>
-            <Typography variant="h5" style={{color: 'burlywood;'}}>{content.subheading}</Typography>
+            <Typography variant="h5">{content.subheading}</Typography>
             </Grid>
         </Grid>
         <Grid container style={styles.parentRoot} spacing={2}>
@@ -100,7 +101,7 @@ export default function OurStrategy() {
           loop={true}
           muted={true}
         >
-          <source src={`${BASE_URL}/strategy_ujnfe2`} type="video/mp4" />
+          <source src={`${BASE_URL}/strategy_tyox5d`} type="video/mp4" />
         </video>
       </Grid>
       <Grid container justify="center" style={styles.strategyPos}>
