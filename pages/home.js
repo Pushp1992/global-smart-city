@@ -11,9 +11,6 @@ import HowWeServe from '../src/component/HomeComponent/HowWeServe/HowWeServe';
 import OurStrategy from '../src/component/HomeComponent/Strategy/strategy';
 import OurPurpose from '../src/component/HomeComponent/OurPurpose/purpose';
 import OurCapabilities from '../src/component/HomeComponent/Capabilities/capabilities';
-// import Testimonial from '../src/component/HomeComponent/Testimonial/testimonial';
-
-import {PreFooter, BannerImage} from '../src/component/Footer/pre-footer';
 import Footer from '../src/component/Footer/footer';
 
 function HomePage() {
