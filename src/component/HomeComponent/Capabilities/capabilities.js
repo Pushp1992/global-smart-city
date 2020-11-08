@@ -22,7 +22,7 @@ const styles = {
     width: '30rem'
   },
   button: {
-    margin: 2,
+    marginLeft: 40,
     backgroundColor: 'teal'
   },
 };

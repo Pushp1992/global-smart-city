@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -103,7 +102,7 @@ export default function NavBar() {
                 <Grid container direction="row" spacing={3} justify="flex-end">
                     <Button variant="contained" name="company" color="primary" aria-haspopup="true"
                         onClick={handleOpen} style={styles.buttonTheme} style={{marginRight:'1rem', backgroundColor:'teal'}}>
-                        COMPANY
+                        About Company
                     </Button>
                     <StyledMenu id="company" anchorEl={companyMenu} open={Boolean(companyMenu)} onClose={handleClose} keepMounted>
                         <StyledMenuItem>
@@ -172,7 +171,7 @@ export default function NavBar() {
 
                     <Button variant="contained" color="primary" name="industry" aria-haspopup="true"
                         onClick={handleOpen} style={{marginRight:'1rem', backgroundColor:'teal'}}>
-                        <Link href=""><a>INDUSTRIES</a></Link>
+                        <Link href=""><a>Industries</a></Link>
                     </Button>
                     <StyledMenu id="industry" anchorEl={industryMenu} open={Boolean(industryMenu)} onClose={handleClose} keepMounted>
                         <StyledMenuItem>
@@ -278,11 +277,17 @@ export default function NavBar() {
                     </StyledMenu>
 
                     <Button variant="contained" color="primary" style={{marginRight:'1rem', backgroundColor:'teal'}}>
-                        <Link href="/about"><a>OBSERVATORY</a></Link>
+                        <Link href=""><a>Smart Data Observatory</a></Link>
                     </Button>
-                    <input type="text" name="search" placeholder="Search" style={styles.textField} />
                     <Button variant="contained" color="primary" style={{marginRight:'1rem', backgroundColor:'teal'}}>
-                        <Link href="/about"><a>LOGIN</a></Link>
+                        <Link href=""><a>Contact us</a></Link>
+                    </Button>
+                    <Button variant="contained" color="primary" style={{marginRight:'1rem', backgroundColor:'#b2d8d8', color: '#008080'}}>
+                        Search
+                    </Button>
+                    {/* <input type="text" name="search" placeholder="Search" style={styles.textField} /> */}
+                    <Button variant="contained" color="primary" style={{marginRight:'1rem', backgroundColor:'teal'}}>
+                        <Link href="/about"><a>Login</a></Link>
                     </Button>      
                     {/* <Button variant="contained" color="primary" style={styles.buttonTheme}>
                         SEARCH
