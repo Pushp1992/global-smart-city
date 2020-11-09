@@ -41,7 +41,7 @@ function HomePage() {
             <Container maxWidth={false} style={{marginTop: '25rem'}}>
                 {/* Includes Information ON Basic Statistics */}
                 <Grid container direction="row" justify="center" alignItems="center">
-                    <h2>Our Unique Value Propositions</h2>
+                    <h2>What set us apart?</h2>
                 </Grid>
                 <Grid>
                     <ValueProposition />
