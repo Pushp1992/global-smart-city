@@ -18,9 +18,9 @@ const styles = {
 };
 function ValueProposition() {
   return (
-    <Grid item xs zeroMinWidth>
+    <Grid item xs>
       <Paper>
-        <img src={`${IMAG_URL}/unique-value_vn8vf2`} alt="value proposition" />
+        <img src={`${IMAG_URL}/unique-value_vn8vf2`} alt="value proposition" style={{maxWidth: '100%'}}/>
       </Paper>
     </Grid>
   );

@@ -20,7 +20,7 @@ function HomePage() {
         <div>
             {/* Includes Main Image with NavBar and TagLine */}
             <Container disableGutters={true} maxWidth={false}>
-            <Grid item md={12} className={styles.navBarPosition}>
+            <Grid item md className={styles.navBarPosition}>
                 <NavBar />
             </Grid>
             </Container>
