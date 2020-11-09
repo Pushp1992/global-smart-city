@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -92,7 +91,7 @@ export default function NavBar() {
     };
 
     return (
-        <div style={styles.root}>
+
             <Grid container direction="row" spacing={3} alignItems="center" >
                 <Grid item md={1}>
                     <div>
@@ -102,8 +101,8 @@ export default function NavBar() {
                 <Grid item md={11}>
                 <Grid container direction="row" spacing={3} justify="flex-end">
                     <Button variant="contained" name="company" color="primary" aria-haspopup="true"
-                        onClick={handleOpen} style={styles.buttonTheme} style={{marginRight:'1rem', backgroundColor:'teal'}}>
-                        COMPANY
+                        onClick={handleOpen} style={styles.buttonTheme} style={{margin:'1rem', backgroundColor:'teal'}}>
+                        About Company
                     </Button>
                     <StyledMenu id="company" anchorEl={companyMenu} open={Boolean(companyMenu)} onClose={handleClose} keepMounted>
                         <StyledMenuItem>
@@ -134,7 +133,7 @@ export default function NavBar() {
                     </StyledMenu>
 
                     <Button variant="contained" color="primary" name="service" aria-haspopup="true"
-                        onClick={handleOpen} style={{marginRight:'1rem', backgroundColor:'teal'}}>
+                        onClick={handleOpen} style={{margin:'1rem', backgroundColor:'teal'}}>
                         Services
                     </Button>
                     <StyledMenu id="service" anchorEl={serviceMenu} open={Boolean(serviceMenu)} onClose={handleClose} keepMounted>
@@ -171,8 +170,8 @@ export default function NavBar() {
                     </StyledMenu>
 
                     <Button variant="contained" color="primary" name="industry" aria-haspopup="true"
-                        onClick={handleOpen} style={{marginRight:'1rem', backgroundColor:'teal'}}>
-                        <Link href=""><a>INDUSTRIES</a></Link>
+                        onClick={handleOpen} style={{margin:'1rem', backgroundColor:'teal'}}>
+                        <Link href=""><a>Industries</a></Link>
                     </Button>
                     <StyledMenu id="industry" anchorEl={industryMenu} open={Boolean(industryMenu)} onClose={handleClose} keepMounted>
                         <StyledMenuItem>
@@ -277,12 +276,18 @@ export default function NavBar() {
                         </StyledMenuItem>
                     </StyledMenu>
 
-                    <Button variant="contained" color="primary" style={{marginRight:'1rem', backgroundColor:'teal'}}>
-                        <Link href="/about"><a>OBSERVATORY</a></Link>
+                    <Button variant="contained" color="primary" style={{margin:'1rem', backgroundColor:'teal'}}>
+                        <Link href=""><a>Smart Data Observatory</a></Link>
                     </Button>
-                    <input type="text" name="search" placeholder="Search" style={styles.textField} />
-                    <Button variant="contained" color="primary" style={{marginRight:'1rem', backgroundColor:'teal'}}>
-                        <Link href="/about"><a>LOGIN</a></Link>
+                    <Button variant="contained" color="primary" style={{margin:'1rem', backgroundColor:'teal'}}>
+                        <Link href=""><a>Contact us</a></Link>
+                    </Button>
+                    <Button variant="contained" color="primary" style={{margin:'1rem', backgroundColor:'#b2d8d8', color: '#008080'}}>
+                        Search
+                    </Button>
+                    {/* <input type="text" name="search" placeholder="Search" style={styles.textField} /> */}
+                    <Button variant="contained" color="primary" style={{margin:'1rem', backgroundColor:'teal'}}>
+                        <Link href="/about"><a>Login</a></Link>
                     </Button>      
                     {/* <Button variant="contained" color="primary" style={styles.buttonTheme}>
                         SEARCH
@@ -290,6 +295,6 @@ export default function NavBar() {
                 </Grid>
                 </Grid>
             </Grid>
-        </div>
+
     )
 };

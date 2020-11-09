@@ -17,6 +17,7 @@ a {
 
 button {
   border-radius: unset !important;
+  text-transform: capitalize !important;
 }
 
 @media only screen and (max-width: 1024px) {

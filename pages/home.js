@@ -11,9 +11,6 @@ import HowWeServe from '../src/component/HomeComponent/HowWeServe/HowWeServe';
 import OurStrategy from '../src/component/HomeComponent/Strategy/strategy';
 import OurPurpose from '../src/component/HomeComponent/OurPurpose/purpose';
 import OurCapabilities from '../src/component/HomeComponent/Capabilities/capabilities';
-// import Testimonial from '../src/component/HomeComponent/Testimonial/testimonial';
-
-import {PreFooter, BannerImage} from '../src/component/Footer/pre-footer';
 import Footer from '../src/component/Footer/footer';
 
 function HomePage() {
@@ -23,7 +20,7 @@ function HomePage() {
         <div>
             {/* Includes Main Image with NavBar and TagLine */}
             <Container disableGutters={true} maxWidth={false}>
-            <Grid item md={12} className={styles.navBarPosition}>
+            <Grid item md className={styles.navBarPosition}>
                 <NavBar />
             </Grid>
             </Container>
@@ -44,7 +41,7 @@ function HomePage() {
             <Container maxWidth={false} style={{marginTop: '25rem'}}>
                 {/* Includes Information ON Basic Statistics */}
                 <Grid container direction="row" justify="center" alignItems="center">
-                    <h2>Our Unique Value Propositions</h2>
+                    <h2>What set us apart?</h2>
                 </Grid>
                 <Grid>
                     <ValueProposition />

@@ -9,7 +9,7 @@ let viewsImg = "../images/statistics/icon_views.png";
 let downloadImg = "../images/statistics/icon_download.png";
 
 const IMAG_URL =
-  "https://res.cloudinary.com/pushpcloud/image/upload/w_1507,h_400,c_scale/v1604384404/smart-city";
+  "https://res.cloudinary.com/pushpcloud/image/upload/c_scale/v1604384404/smart-city";
 
 const styles = {
   label: {
@@ -18,9 +18,9 @@ const styles = {
 };
 function ValueProposition() {
   return (
-    <Grid item xs zeroMinWidth>
+    <Grid item xs>
       <Paper>
-        <img src={`${IMAG_URL}/unique-value_vn8vf2`} alt="value proposition" />
+        <img src={`${IMAG_URL}/unique-value_lh4gev`} alt="value proposition" style={{maxWidth: '100%'}}/>
       </Paper>
     </Grid>
   );
