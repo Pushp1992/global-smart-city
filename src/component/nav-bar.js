@@ -100,7 +100,7 @@ export default function NavBar() {
         </div>
       </Grid>
       <Grid item md={11}>
-        <Grid container direction="row" spacing={3} justify="flex-end">
+        <Grid container direction="row" spacing={0} justify="flex-end">
           <Button
             variant="contained"
             name="company"
@@ -108,7 +108,7 @@ export default function NavBar() {
             aria-haspopup="true"
             onClick={handleOpen}
             style={styles.buttonTheme}
-            style={{ margin: "1rem", backgroundColor: "teal" }}
+            style={{margin:"1rem",backgroundColor:"teal",marginRight:'1px'}}
           >
             About Company
           </Button>
@@ -166,7 +166,7 @@ export default function NavBar() {
             name="service"
             aria-haspopup="true"
             onClick={handleOpen}
-            style={{ margin: "1rem", backgroundColor: "teal" }}
+            style={{margin:"1rem",backgroundColor:"teal",marginRight:'1px'}}
           >
             Services
           </Button>
@@ -232,7 +232,7 @@ export default function NavBar() {
             name="industry"
             aria-haspopup="true"
             onClick={handleOpen}
-            style={{ margin: "1rem", backgroundColor: "teal" }}
+            style={{margin:"1rem",backgroundColor:"teal",marginRight:'1px'}}
           >
             <Link href="">
               <a>Industries</a>
@@ -409,7 +409,7 @@ export default function NavBar() {
           <Button
             variant="contained"
             color="primary"
-            style={{ margin: "1rem", backgroundColor: "teal" }}
+            style={{margin:"1rem",backgroundColor:"teal",marginRight:'1px'}}
           >
             <Link href="">
               <a>Smart Data Observatory</a>
@@ -418,7 +418,7 @@ export default function NavBar() {
           <Button
             variant="contained"
             color="primary"
-            style={{ margin: "1rem", backgroundColor: "teal" }}
+            style={{margin:"1rem",backgroundColor:"teal",marginRight:'1px'}}
           >
             <Link href="">
               <a>Contact us</a>
@@ -432,6 +432,7 @@ export default function NavBar() {
               backgroundColor: "#b2d8d8",
               color: "#008080",
               width: "10rem",
+              marginRight:'1px'
             }}
           >
             Search
@@ -439,7 +440,7 @@ export default function NavBar() {
           <Button
             variant="contained"
             color="primary"
-            style={{ margin: "1rem", backgroundColor: "teal" }}
+            style={{margin:"1rem",backgroundColor:"teal"}}
           >
             <Link href="/about">
               <a>Login</a>
