@@ -84,8 +84,8 @@ export default function Footer() {
           >Solutions</h4>
           <ul>
             <li>Technology Procurement</li>
-            <li>Innovation Labs &nbsp; Disctricts</li>
-            <li>Regional &nbsp; Theme based Networks</li>
+            <li>Innovation Labs&nbsp;Districts</li>
+            <li>Regional&nbsp;Theme based Networks</li>
           </ul>
         </Grid>
         <Grid item md>
@@ -155,7 +155,7 @@ export default function Footer() {
           </div>
         </Grid>
         <Grid item md>
-          © 2020 Smart Development Professionals Inc. All Rights Reserved
+          © 2020 Smart Development Professionals LLC. All Rights Reserved
         </Grid>
         <Grid item md>
           Terms of Service

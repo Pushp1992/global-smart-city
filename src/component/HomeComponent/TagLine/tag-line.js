@@ -2,7 +2,7 @@ const TagLine = () => {
   return (
     <div className="tagline">
       <div className="heading">
-        Smart Development for a better future to the next generation
+        Smart Development Professionals (SDP) for a better future to the next generation
       </div>
       <div className="subheading">
         <label>We at SDP LLC</label> &nbsp;
