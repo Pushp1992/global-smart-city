@@ -36,7 +36,7 @@ function HomePage() {
 
             <Container maxWidth="false" className={styles.marginTop}>
                 {/* Includes Information ON Basic Statistics */}
-                <Grid container direction="row" justify="center" alignItems="center" className={styles.headingImage}>
+                <Grid container direction="row" justify="center" alignItems="center">
                     <h1 className={styles.heading}>What set us apart?</h1>
                 </Grid>
                 <Grid container direction="row" justify="center" alignItems="center">
@@ -46,7 +46,7 @@ function HomePage() {
 
             <Container maxWidth="false" className={styles.marginTop}>
                 {/* Who we Serve */}
-                <Grid container direction="row" justify="center" alignItems="center" className={styles.headingImage}>
+                <Grid container direction="row" justify="center" alignItems="center">
                     <h1 className={styles.heading}>Whom We Can Help</h1>
                 </Grid>
                 <Grid>
@@ -56,7 +56,7 @@ function HomePage() {
 
             <Container maxWidth="false" className={styles.marginTop}>
                 {/* Who we Serve */}
-                <Grid container direction="row" justify="center" alignItems="center" className={styles.headingImage}>
+                <Grid container direction="row" justify="center" alignItems="center">
                     <h1 className={styles.heading}>How We Can Help</h1>
                 </Grid>
                 <Grid>
@@ -73,7 +73,7 @@ function HomePage() {
 
             <Container maxWidth="false" className={styles.marginTop}>
                 {/* Our Purpose */}
-                <Grid container direction="row" justify="center" alignItems="center" className={styles.headingImage}>
+                <Grid container direction="row" justify="center" alignItems="center">
                     <h1 className={styles.heading}>Our Purpose</h1>
                 </Grid>
                 <Grid>
@@ -83,7 +83,7 @@ function HomePage() {
 
             <Container maxWidth="false" className={styles.marginTop}>
                 {/* Our Capabilities */}
-                <Grid container direction="row" justify="center" alignItems="center" className={styles.headingImage}>
+                <Grid container direction="row" justify="center" alignItems="center">
                     <h1 className={styles.heading}>Our Core Capabilities</h1>
                 </Grid>
                 <Grid>

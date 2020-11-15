@@ -17,6 +17,7 @@ const styles = {
   },
   subHeading: {
     color: "white",
+    fontSize: '16px'
   },
   videoPosition: {
     position: "relative",
@@ -36,16 +37,16 @@ const StrategyCard = () => {
   return (
     <Grid container className="strategyContainer" alignItems="stretch">
       <Grid container justify="center" style={styles.textMargin}>
-        <Typography variant="h4">Our Strategy</Typography>
+        <Typography variant="h4"><b>Our Strategy</b></Typography>
       </Grid>
       <Grid container justify="center" style={styles.textMargin}>
         <Typography variant="h4" className="strategyData">
-          {content.heading}
+          <b>{content.heading}</b>
         </Typography>
       </Grid>
       <Grid container justify="center" style={styles.textMargin}>
         <Typography variant="h4" className="strategyData">
-          {content.subheading}
+          <b>{content.subheading}</b>
         </Typography>
       </Grid>
       <Grid
