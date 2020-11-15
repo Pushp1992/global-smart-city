@@ -5,7 +5,7 @@ const BASE_IMG_URL =
 
 const clients = [
   {
-    id:1,
+    id: 1,
     name: "National Govt",
     heading: "Helping National Govt to excel",
     image: `${IMG_URL}/national_gbkdor`,
@@ -18,7 +18,7 @@ const clients = [
     whether Ministry of Urban Development, Rural Development, Economy, Education, Communication & IT, Health etc. we support in every verticals.`,
   },
   {
-    id:2,
+    id: 2,
     name: "Local Government",
     heading: "Helping Local Government",
     image: `${IMG_URL}/local_rcymnv`,
@@ -32,7 +32,7 @@ const clients = [
     people.`,
   },
   {
-    id:3,
+    id: 3,
     name: "International Agencies",
     heading: "Helping International Agencies to excel",
     image: `${IMG_URL}/int-agencies_zyetix`,
@@ -45,7 +45,7 @@ const clients = [
     tailored presentations to pitch to national as well as local governments.`,
   },
   {
-    id:4,
+    id: 4,
     name: "MNC(s)/industries",
     heading: "Helping MNCs/industries to excel",
     image: `${IMG_URL}/MNC_yuk9r8`,
@@ -59,7 +59,7 @@ const clients = [
     through.`,
   },
   {
-    id:5,
+    id: 5,
     name: "Think Tanks",
     heading: "Helping Think Tanks to excel",
     image: `${IMG_URL}/Think-tank_hn0cch`,
@@ -73,7 +73,7 @@ const clients = [
     in their respective domain mutually.`,
   },
   {
-    id:6,
+    id: 6,
     name: "Research Organization",
     heading: "Helping Research Organization to excel",
     image: `${IMG_URL}/research_arosck`,
@@ -86,7 +86,7 @@ const clients = [
     We have strong imapct and proven skill in the research organiation domain as we already served various stakeholder in this domain.`,
   },
   {
-    id:7,
+    id: 7,
     name: "NGO(s)",
     heading: "Helping Non Government organization to excel",
     image: `${IMG_URL}/NGO_jrmqdy`,

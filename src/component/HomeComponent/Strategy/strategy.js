@@ -11,91 +11,78 @@ const BASE_URL =
 
 const styles = {
   cardRoot: {
-    color:'white',
+    color: "white",
     maxWidth: 345,
-    backgroundColor: 'black'
-  },
-  parentRoot: {
-    flexGrow: 1,
-    marginTop: "2rem",
+    backgroundColor: "black",
   },
   subHeading: {
     color: "white",
   },
-  imagePosition: {
-    position: "absolute",
+  videoPosition: {
+    position: "relative",
+    width: "100%",
   },
   strategyPos: {
-    zIndex: "9",
     opacity: "0.7",
+    position: "absolute",
   },
-  imageStyle: {
-    imageRendering: "crisp-edges",
-    width: "-webkit-fill-available !important",
-    height: "100%",
+  textMargin: {
+    marginTop: "5%",
   },
-  marginTop: {
-    color: 'white',
-    marginTop: '10rem'
-  }
 };
 
 const StrategyCard = () => {
   const content = StrategyData;
   return (
-    <div style={styles.marginTop}>
-        <Grid container direction="row" justify="center" alignItems="flex-end" wrap="nowrap" spacing={2}>
-            <Grid item xs={3}>
-                <Typography variant="h4">Our Strategy</Typography>
-            </Grid> <br/>
-        </Grid>
-        <Grid container direction="row" justify="center" alignItems="flex-end" wrap="nowrap" spacing={2}>
-            <Grid item xs={8}>
-            <Typography variant="h5">{content.heading}</Typography>
+    <Grid container className="strategyContainer" alignItems="stretch">
+      <Grid container justify="center" style={styles.textMargin}>
+        <Typography variant="h4">Our Strategy</Typography>
+      </Grid>
+      <Grid container justify="center" style={styles.textMargin}>
+        <Typography variant="h4" className="strategyData">
+          {content.heading}
+        </Typography>
+      </Grid>
+      <Grid container justify="center" style={styles.textMargin}>
+        <Typography variant="h4" className="strategyData">
+          {content.subheading}
+        </Typography>
+      </Grid>
+      <Grid
+        container
+        justify="space-around"
+        spacing={2}
+        style={styles.textMargin}
+      >
+        {content.cards.map((data) => {
+          return (
+            <Grid key={data.id} item>
+              <Card style={styles.cardRoot}>
+                <CardHeader title={data.heading} style={{ color: "teal" }} />
+                <CardContent>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    <label style={styles.subHeading}>{data.subheading}</label>
+                  </Typography>
+                </CardContent>
+              </Card>
             </Grid>
-        </Grid>{" "}
-        <br />
-        <Grid container direction="row" justify="center" alignItems="center" wrap="nowrap" spacing={2}>
-            <Grid item xs={8}>
-            <Typography variant="h5">{content.subheading}</Typography>
-            </Grid>
-        </Grid>
-        <Grid container style={styles.parentRoot} spacing={2}>
-            <Grid item xs={12}>
-            <Grid container justify="space-around" spacing={4}>
-                {content.cards.map((data) => {
-                return (
-                    <Grid key={data.id} item>
-                    <Card style={styles.cardRoot}>
-                        <CardHeader title={data.heading} style={{color:'white'}}/>
-                        <CardContent>
-                        <Typography
-                            variant="body2"
-                            color="textSecondary"
-                            component="p"
-                        >
-                            <label style={styles.subHeading}>
-                            {data.subheading}
-                            </label>
-                        </Typography>
-                        </CardContent>
-                    </Card>
-                    </Grid>
-                );
-                })}
-            </Grid>
-            </Grid>
-        </Grid>
-    </div>
+          );
+        })}
+      </Grid>
+    </Grid>
   );
 };
 
 export default function OurStrategy() {
   return (
-    <div>
-      <Grid container style={styles.imagePosition}>
+    <Grid container direction="row">
+      <Grid item md className="strategyVideo">
         <video
-          style={styles.imageStyle}
+          style={styles.videoPosition}
           controls={false}
           autoplay="true"
           loop={true}
@@ -104,9 +91,16 @@ export default function OurStrategy() {
           <source src={`${BASE_URL}/strategy_tyox5d`} type="video/mp4" />
         </video>
       </Grid>
-      <Grid container justify="center" style={styles.strategyPos}>
-        <StrategyCard />
+      <Grid
+        container
+        direction="row"
+        justify="center"
+        style={styles.strategyPos}
+      >
+        <Grid item md>
+          <StrategyCard />
+        </Grid>
       </Grid>
-    </div>
+    </Grid>
   );
-};
+}

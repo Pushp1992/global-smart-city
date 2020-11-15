@@ -14,6 +14,7 @@ const tweeterImg = "../images/socialMedia/tweet.png";
 const styles = {
   root: {
     display: "flex",
+    marginLeft: "42px !important",
   },
   imgPos: {
     display: "inline-block !important",
@@ -33,10 +34,10 @@ const styles = {
   },
   borderStyle: {
     border: "revert",
-    marginTop: "2rem",
+    marginTop: "6rem",
   },
   textField: {
-    width: "20rem",
+    width: "16rem",
     padding: "10px",
     backgroundColor: "smoke-white",
     display: "inline-flex !important",
@@ -60,7 +61,7 @@ export default function Footer() {
         direction="row"
         container
         justify="center"
-        alignItems="center"
+        alignItems="flex-start"
         spacing={3}
         style={styles.upperFooter}
       >
@@ -68,7 +69,7 @@ export default function Footer() {
           <div 
           style={styles.heading}
           >
-            <h3>Subscribe to Our Newsletter</h3>
+            <h4>Subscribe to Our Newsletter</h4>
             <input
               type="text"
               name="email"
@@ -80,7 +81,7 @@ export default function Footer() {
         <Grid item md>
           <h4 
           style={styles.heading}
-          >SOLUTIONS</h4>
+          >Solutions</h4>
           <ul>
             <li>Technology Procurement</li>
             <li>Innovation Labs &nbsp; Disctricts</li>
@@ -90,7 +91,7 @@ export default function Footer() {
         <Grid item md>
           <h4 
           style={styles.heading}
-          >COMPANY</h4>
+          >Company</h4>
           <ul>
             <li>About</li>
             <li>In the Press</li>
@@ -110,7 +111,7 @@ export default function Footer() {
         <Grid item md>
           <h4 
           style={styles.heading}
-          >CONTACT US</h4>
+          >Contact us</h4>
           <ul>
             <li>Smart Development Professionals (SDP) LLC</li>
             <li>112, Capitol trail Network, DE, US-19711</li>
@@ -127,9 +128,9 @@ export default function Footer() {
       <Grid
         direction="row"
         container
-        justify="center"
-        alignItems="flex-end"
-        spacing={3}
+        justify="space-around"
+        alignItems="center"
+        spacing={1}
         style={styles.lowerFooter}
       >
         <Grid item md>
@@ -149,7 +150,7 @@ export default function Footer() {
               <Avatar alt="tweeter" src={tweeterImg} />
             </a>
             <a href="https://www.linkedin.com/company/smart-development-professionals/" target="_blank">
-              <Avatar alt="linkedin" src={linkedinImg} />
+              <Avatar alt="linkedin" src={linkedinImg} style={{width:'30px', height:'30px', marginTop:'5px'}} />
             </a>
           </div>
         </Grid>
