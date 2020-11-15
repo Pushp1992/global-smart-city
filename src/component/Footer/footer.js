@@ -116,7 +116,7 @@ export default function Footer() {
             <li>Smart Development Professionals (SDP) LLC</li>
             <li>112, Capitol trail Network, DE, US-19711</li>
             <li>Mob: +91-9508250394</li>
-            <li>wapp: +91-8743841659</li>
+            <li>whatsApp: +91-8743841659</li>
             <li>info@sdpgroups.com</li>
             <li>www.sdpgroups.com</li>
           </ul>
@@ -143,7 +143,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/sdpgroups/" target="_blank">
               <Avatar alt="instagram" src={instaImg} />
             </a>
-            <a href="https://api.whatsapp.com/send?phone=8743841659" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=918743841659" target="_blank">
               <Avatar alt="whatsapp" src={wappImg} />
             </a>
             <a href="https://twitter.com/SmartSdp" target="_blank">
