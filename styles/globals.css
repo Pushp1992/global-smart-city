@@ -2,13 +2,18 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Heebo, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+hr {
+  background-color: whitesmoke !important;
+  opacity: 0.5;
 }
 
 * {
@@ -21,10 +26,18 @@ button {
 }
 
 @media only screen and (max-width: 1024px) {
-  img {
-    image-rendering: crisp-edges;
-    width: 100% !important;
-    /* height: 100% !important; */
-    height: auto;
+  .strategyVideo > video {
+    height: fit-content;
+  }
+
+  .strategyData {
+    font-size: 1rem !important;
+  }
+
+/* for all the heading on the HomePage */
+  h1 {
+    width: unset !important;
+    font-family: fantasy, Abel, sansSerif;
+    font-size: 25px;
   }
 }

@@ -5,13 +5,12 @@ import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import { blueGrey, green, red } from "@material-ui/core/colors";
 import { HowWeServeData } from "../../../utils/howWeServe";
 
 const styles = {
   root: {
     maxWidth: 345,
-    fontSize: '10px'
+    fontSize: "10px",
   },
   parentRoot: {
     flexGrow: 1,
@@ -21,11 +20,11 @@ const styles = {
     paddingTop: "56.25%", // 16:9
   },
   header: {
-    fontSize: '20px !imporatnt'
+    fontSize: "20px !imporatnt",
   },
   subheading: {
-    color: 'teal'
-  }
+    color: "teal",
+  },
 };
 
 export default function HowWeServe() {
@@ -37,14 +36,18 @@ export default function HowWeServe() {
             return (
               <Grid key={data.id} item>
                 <Card style={styles.root}>
-                  <CardHeader title={data.heading}/>
+                  <CardHeader title={data.heading} />
                   <CardMedia
                     style={styles.media}
                     image={data.image}
                     title={data.heading}
                   />
                   <CardContent>
-                    <Typography variant="body2" color="textSecondary" component="p">
+                    <Typography
+                      variant="body2"
+                      color="textSecondary"
+                      component="p"
+                    >
                       <label style={styles.subheading}>{data.subheading}</label>
                     </Typography>
                   </CardContent>

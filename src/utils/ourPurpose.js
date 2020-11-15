@@ -3,12 +3,12 @@ const IMG_URL =
 
 const Purpose = {
   heading:
-    "Providing support to Decision makers for remarkable change and optimization in governance.",
+    "Providing support to decision-makers for remarkable change and optimization in governance.",
   prefix: "Smart Development Professionals (SDP LLC) ",
   subheading: `is determined to provide pragmatic, comprehensive, technologically advanced and innovative 
-    strategic solutions to achieve results that bridge what is  with what can be. We provide advisory 
-    and consultancy services in the social, economic, Institutional and physical development 
-    of an advanced and inclusive society.`,
+    strategic solutions to achieve results that bridge what is  with what can be. We provide national & local government
+    advisory and management consulting services for social, economic, Institutional and physical development of the 
+    advanced and inclusive neighborhood.`,
   purpose: [
     {
       id: 1,

@@ -80,7 +80,7 @@ export default function OurClients() {
           {
             clients.map((item, index) => {
               return(
-                <Tab key={index} label={item.name} {...a11yProps(index)} />
+                <Tab key={index} label={item.name} {...a11yProps(index)}/>
               )
             })
           }

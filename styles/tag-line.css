@@ -1,6 +1,6 @@
 .tagline {
   color: floralwhite;
-  margin-top: 18rem;
+  /* margin-top: 18rem; */
 }
 
 .heading {
@@ -22,11 +22,11 @@
   font-size: 2.4vw;
   line-height: 6vw;
   font-weight: bolder;
-  direction: ltr;
+  /* direction: ltr; */
 }
 
 .subheading {
-    font-size: 1.4vw;
-    line-height: 2vw;
-    direction: ltr
+  font-size: 1.4vw;
+  line-height: 2vw;
+  /* direction: ltr; */
 }

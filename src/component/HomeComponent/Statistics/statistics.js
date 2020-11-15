@@ -1,82 +1,29 @@
 import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
-
-let cityImg = "../images/statistics/icon_city.png";
-let catalogImg = "../images/statistics/icon_catalog.png";
-let resourceImg = "../images/statistics/icon_resource.png";
-let apisImg = "../images/statistics/icon_apis.png";
-let viewsImg = "../images/statistics/icon_views.png";
-let downloadImg = "../images/statistics/icon_download.png";
 
 const IMAG_URL =
-  "https://res.cloudinary.com/pushpcloud/image/upload/c_scale/v1604384404/smart-city";
+  "https://res.cloudinary.com/pushpcloud/image/upload/v1604384404/smart-city";
 
 const styles = {
   label: {
     color: "#afafaf",
   },
+  display: {
+    display: "contents",
+  },
+  maxwidth: {
+    maxWidth: "80%",
+  },
 };
 function ValueProposition() {
   return (
-    <Grid item xs>
-      <Paper>
-        <img src={`${IMAG_URL}/unique-value_lh4gev`} alt="value proposition" style={{maxWidth: '100%'}}/>
-      </Paper>
+    <Grid item md style={styles.display}>
+      <img
+        src={`${IMAG_URL}/unique-value_lh4gev`}
+        alt="value proposition"
+        style={styles.maxwidth}
+      />
     </Grid>
-  );
-};
-
-function Statistics() {
-  return (
-    <>
-      <Paper square={true}>
-        <Grid container direction="row" spacing={1} justify="center" alignItems="center">
-          <Grid item md>
-            <div>
-              <img src={cityImg} alt="stat_img" />
-            </div>
-            <h3>100</h3>
-            <label style={styles.label}>Cities</label>
-          </Grid>
-          <Grid item md>
-            <div>
-              <img src={catalogImg} alt="stat_img" />
-            </div>
-            <h3>979</h3>
-            <label style={styles.label}>Catloges</label>
-          </Grid>
-          <Grid item md>
-            <div>
-              <img src={resourceImg} alt="stat_img" />
-            </div>
-            <h3>593</h3>
-            <label style={styles.label}>Resources</label>
-          </Grid>
-          <Grid item md>
-            <div>
-              <img src={apisImg} alt="stat_img" />
-            </div>
-            <h3>142</h3>
-            <label style={styles.label}>APIs</label>
-          </Grid>
-          <Grid item md>
-            <div>
-              <img src={viewsImg} alt="stat_img" />
-            </div>
-            <h3>4,342</h3>
-            <label style={styles.label}>Views</label>
-          </Grid>
-          <Grid item md>
-            <div>
-              <img src={downloadImg} alt="stat_img" />
-            </div>
-            <h3>343</h3>
-            <label style={styles.label}>Downloads To Date</label>
-          </Grid>
-        </Grid>
-      </Paper>
-    </>
   );
 }
 
-export { Statistics, ValueProposition };
+export { ValueProposition };

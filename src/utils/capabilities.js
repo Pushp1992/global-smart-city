@@ -6,20 +6,20 @@ const Capabilities = [
     id: 1,
     heading: "Smart Data Observatory",
     imageUrl: `${IMG_URL}/data-observatory_qu64gr`,
-    url: ''
+    url: "",
   },
   {
     id: 2,
     heading: "Management Consulting",
     imageUrl: `${IMG_URL}/mgmt_consulting_dm2gxh`,
-    url: ''
+    url: "",
   },
   {
     id: 3,
     heading: "National & Local Govt. Advisory",
     imageUrl: `${IMG_URL}/advisory_jg3ldx`,
-    url: ''
-  }
+    url: "",
+  },
 ];
 
 export { Capabilities };
