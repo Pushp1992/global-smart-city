@@ -32,7 +32,7 @@ const StyledMenu = withStyles({
     border: "1px solid white",
     marginTop: "1rem",
     backgroundColor: "teal",
-    opacity: "0.8 !important",
+    opacity: "0.5 !important",
     fontWeight: "bolder",
   },
 })((props) => (
