@@ -96,7 +96,11 @@ export default function NavBar() {
     <Grid container direction="row" spacing={3} alignItems="center">
       <Grid item md={1}>
         <div>
-          <img src={`${BASE_URL}/smart-city/company-logo_qel7bw`} alt="logo" />
+          <Link href="/">
+            <a>
+              <img src={`${BASE_URL}/smart-city/company-logo_qel7bw`} alt="logo" />
+            </a>
+          </Link>
         </div>
       </Grid>
       <Grid item md={11}>
@@ -120,15 +124,15 @@ export default function NavBar() {
             keepMounted
           >
             <StyledMenuItem>
-              <Link href="/about">
+              <Link href="/company/about-us">
                 <a>
-                  <ListItemText primary="About" />
+                  <ListItemText primary="About us" />
                 </a>
               </Link>
             </StyledMenuItem>
             <Divider />
             <StyledMenuItem>
-              <Link href="">
+              <Link href="/company/goals">
                 <a>
                   <ListItemText primary="Our Goals" />
                 </a>
@@ -136,15 +140,15 @@ export default function NavBar() {
             </StyledMenuItem>
             <Divider />
             <StyledMenuItem>
-              <Link href="">
+              <Link href="/company/vision-mission-values">
                 <a>
-                  <ListItemText primary="Mission &amp; Values" />
+                  <ListItemText primary="Vision Mission &amp; Values" />
                 </a>
               </Link>
             </StyledMenuItem>
             <Divider />
             <StyledMenuItem>
-              <Link href="">
+              <Link href="/company/careers">
                 <a>
                   <ListItemText primary="Careers" />
                 </a>
@@ -152,7 +156,7 @@ export default function NavBar() {
             </StyledMenuItem>
             <Divider />
             <StyledMenuItem>
-              <Link href="">
+              <Link href="/company/teams">
                 <a>
                   <ListItemText primary="Team &amp; Leadership" />
                 </a>
