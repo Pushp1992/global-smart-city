@@ -36,8 +36,7 @@ const style = {
     backgroundColor: "black",
   },
   buttonStyle: {
-    backgroundColor: "teal",
-    opacity: "0.8",
+    backgroundColor: "#00CED1",
     width: "15rem",
     height: "4rem",
     fontSize: "20px",
