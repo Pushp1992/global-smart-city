@@ -172,7 +172,7 @@ const AboutUs = () => {
 
         <Grid item md style={style.topMargin}>
           <div style={style.leftMargin}>
-            <Typography>{StrategicPartner.heading}</Typography>
+            <Typography style={style.prefixStyle}>{StrategicPartner.heading}</Typography>
             <Typography>{StrategicPartner.body}</Typography>
           </div>
         </Grid>
