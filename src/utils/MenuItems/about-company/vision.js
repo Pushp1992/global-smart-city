@@ -38,7 +38,7 @@ const CompanyVMV = {
     name: "SD Prakash,",
     designation: "Founder & CEO",
     company: "SDP LLC",
-    subject: `Opening message from CEO & Founder`,
+    subject: `Opening message from Founder & CEO`,
     salutation: "Dear Colleagues,",
     messageBody: [
       {

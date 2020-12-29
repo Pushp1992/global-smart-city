@@ -2,7 +2,7 @@ const BASE_URL =
   "https://res.cloudinary.com/pushpcloud/image/upload/v1608458732/smart-city/MenuBar/AboutCompany/careers";
 
 const CompanyCareer = {
-  bannerImage: `${BASE_URL}/Careers-1_qeivjk`,
+  bannerImage: `${BASE_URL}/Careers-1_qwugai`,
   bannerHeading: "Join SDP",
   bannerSubHeading: "Help us to make our cities & villages more Liveable",
   mainContent: `Few organizations want to change the world. We're beginning 

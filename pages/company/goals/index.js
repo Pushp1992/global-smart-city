@@ -16,6 +16,9 @@ const BASE_URL =
   "https://res.cloudinary.com/pushpcloud/image/upload/v1608458732/smart-city/MenuBar/AboutCompany/goals";
 
 const style = {
+  margin: {
+    margin: "60px",
+  },
   topMargin: {
     marginTop: "40px",
   },
@@ -62,7 +65,7 @@ const OurGoal = () => {
           <CoverCard />
         </Grid>
 
-        <Grid item md style={style.topMargin}>
+        <Grid item md style={style.margin}>
           <Typography
             align="left"
             display="initial"
@@ -73,7 +76,7 @@ const OurGoal = () => {
           </Typography>
         </Grid>
 
-        <Grid item md style={style.topMargin}>
+        <Grid item md>
           <img
             src={`${BASE_URL}/Our-Goals_sfr6ve`}
             alt="cover_image"
@@ -86,7 +89,7 @@ const OurGoal = () => {
           wrap="nowrap"
           spacing={2}
           direction="row"
-          style={style.topMargin}
+          style={style.margin}
           className="ourGoals"
         >
           <div style={style.padding}>
@@ -103,7 +106,7 @@ const OurGoal = () => {
         </Grid>
       </Container>
 
-      <Container disableGutters={true} maxWidth="false" style={style.topMargin}>
+      <Container disableGutters={true} maxWidth="false">
         <Grid item md>
           <Footer />
         </Grid>
