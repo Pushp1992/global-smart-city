@@ -22,6 +22,9 @@ const BASE_URL =
   "https://res.cloudinary.com/pushpcloud/image/upload/v1608458732/smart-city/MenuBar/AboutCompany/about-us";
 
 const style = {
+  margin: {
+    margin: "60px",
+  },
   topMargin: {
     marginTop: "40px",
   },
@@ -56,6 +59,8 @@ const style = {
     root: {
       display: "flex",
       backgroundColor: "ghostwhite",
+      width: '350px',
+      height: '200px'
     },
     media: {
       padding: "20px",
@@ -135,7 +140,7 @@ const AboutUs = () => {
           <CoverCard />
         </Grid>
 
-        <Grid item md style={style.topMargin}>
+        <Grid item md style={style.margin}>
           <Typography
             align="left"
             display="initial"
@@ -146,7 +151,7 @@ const AboutUs = () => {
           </Typography>
         </Grid>
 
-        <Grid item md style={style.topMargin}>
+        <Grid item md>
           <img
             src={`${BASE_URL}/about-us-1_dgrdcz`}
             alt="cover_image"
@@ -155,8 +160,13 @@ const AboutUs = () => {
           />
         </Grid>
 
-        <Grid wrap="nowrap" spacing={2} style={style.topMargin} className="info">
-          <div style={style.leftMargin}>
+        <Grid
+          wrap="nowrap"
+          spacing={2}
+          style={style.topMargin}
+          className="info"
+        >
+          <div style={style.margin}>
             <p>
               <label style={style.prefixStyle}>{AboutCompany.prefix}</label>
               <label>{AboutCompany.suffixFirst}</label>
@@ -171,8 +181,10 @@ const AboutUs = () => {
         </Grid>
 
         <Grid item md style={style.topMargin}>
-          <div style={style.leftMargin}>
-            <Typography style={style.prefixStyle}>{StrategicPartner.heading}</Typography>
+          <div style={style.margin}>
+            <Typography style={style.prefixStyle}>
+              {StrategicPartner.heading}
+            </Typography>
             <Typography>{StrategicPartner.body}</Typography>
           </div>
         </Grid>
@@ -181,12 +193,12 @@ const AboutUs = () => {
           container
           direction="row"
           justify="space-evenly"
-          spacing={2}
+          spacing={4}
           style={style.topMargin}
         >
           {StrategyCard.card.map((item, index) => {
             return (
-              <Grid key={index} item md={4}>
+              <Grid key={index} item md={3}>
                 <Card style={style.card.root}>
                   <div style={style.card.media}>
                     <CardMedia
@@ -203,9 +215,9 @@ const AboutUs = () => {
                     <CardContent>
                       {item.list.map((item, index) => {
                         return (
-                          <Typography key={index} variant="subtitle1">
+                          <ul ky={index}>
                             <li>{item}</li>
-                          </Typography>
+                          </ul>
                         );
                       })}
                     </CardContent>
@@ -242,11 +254,7 @@ const AboutUs = () => {
           />
         </Grid>
       </Container>
-      <Container
-        disableGutters={true}
-        maxWidth="false"
-        style={style.topMargin}
-      >
+      <Container disableGutters={true} maxWidth="false" style={style.topMargin}>
         <Grid item md>
           <Footer />
         </Grid>

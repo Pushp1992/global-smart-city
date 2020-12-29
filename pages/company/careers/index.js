@@ -19,6 +19,9 @@ import styles from "../../../styles/home.module.scss";
 import { CompanyCareer } from "../../../src/utils/MenuItems/about-company/careers";
 
 const style = {
+  margin: {
+    margin: '60px'
+  },
   topMargin: {
     marginTop: "40px",
   },
@@ -28,6 +31,7 @@ const style = {
   headingTextColor: {
     color: "teal",
     fontWeight: "600 !important",
+    fontWeight: 'bolder'
   },
   buttonMargin: {
     margin: "40px",
@@ -97,7 +101,7 @@ const OurGoal = () => {
           <CoverCard />
         </Grid>
 
-        <Grid item md style={style.topMargin}>
+        <Grid item md style={style.margin}>
           <Typography
             align="left"
             display="initial"
@@ -108,7 +112,7 @@ const OurGoal = () => {
           </Typography>
         </Grid>
 
-        <Grid item md style={style.topMargin}>
+        <Grid item md>
           <img
             src={CompanyCareer.bannerImage}
             alt="cover_image"
@@ -117,7 +121,7 @@ const OurGoal = () => {
           />
         </Grid>
 
-        <Grid item md style={style.topMargin}>
+        <Grid item md style={style.margin}>
           <div style={style.padding}>
             <Typography>{CompanyCareer.mainContent}</Typography>
           </div>
@@ -127,13 +131,12 @@ const OurGoal = () => {
       <Container
         disableGutters={false}
         maxWidth="false"
-        style={style.topMargin}
         className="test me"
       >
         <Grid item md align="center">
           {CompanyCareer.cards.map((item, index) => {
             return (
-              <Grid key={index} item md={6} style={style.topMargin}>
+              <Grid key={index} item md={6} style={style.topMargin} align="left">
                 <Card className={styles.careerCard}>
                   <div style={style.card.media}>
                     <CardMedia
@@ -148,7 +151,7 @@ const OurGoal = () => {
                       <Typography style={style.cardHeading}>
                         {item.cardHeading}
                       </Typography>
-                      <Typography style={style.topMargin}>
+                      <Typography>
                         <label style={style.cardSubHeading}>
                           {item.cardSubHeading}
                         </label>
@@ -167,10 +170,13 @@ const OurGoal = () => {
           <div style={style.buttonMargin}>
             <Button variant="contained" style={style.buttonStyle}>
               {" "}
-              Apply Now
+              Apply now
             </Button>
             <Typography style={style.applyText}>
               Search Roles, Apply or Continue an Application
+            </Typography>
+            <Typography>
+              Mail your CV to {" "} <u>careers@sdpgroups.com</u>
             </Typography>
           </div>
           <LinearProgress style={style.progressBarStyle} />
