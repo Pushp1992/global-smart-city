@@ -115,6 +115,7 @@ export default function Footer() {
           <ul>
             <li>Smart Development Professionals (SDP) LLC</li>
             <li>112, Capitol trail Network, DE, US-19711</li>
+            <li>US Office.: +1 302-444-6643 Ext 1001</li>
             <li>Mob: +91-9508250394</li>
             <li>whatsApp: +91-8743841659</li>
             <li>info@sdpgroups.com</li>
