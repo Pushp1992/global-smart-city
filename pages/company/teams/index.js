@@ -165,13 +165,13 @@ const OurTeam = () => {
                             style={{ color: "white" }}
                           >
                             <Grid item md style={style.employeeName}>
-                              <Typography variant="h6">{subItem.name}</Typography>
-                              <Typography variant="subtitle1">{subItem.designation}</Typography>
-                              <Typography variant="subtitle2"> {subItem.company}</Typography>
-                              <Typography variant="subtitle2">{subItem.role}</Typography>
-                              <Typography variant="subtitle2">
+                              <div>{subItem.name}</div>
+                              <div>{subItem.designation}</div>
+                              <div> {subItem.company}</div>
+                              <div>{subItem.role}</div>
+                              <div>
                                 Email:<u>{subItem.email}</u>
-                              </Typography>
+                              </div>
                             </Grid>
                           </Grid>
                         </Grid>
