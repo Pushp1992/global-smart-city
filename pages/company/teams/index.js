@@ -39,7 +39,6 @@ const style = {
     fontSize: "1.3rem",
     fontFamily: "auto",
     color: "white !important",
-    height: "7rem",
   },
   employeeInfo: {
     fontFamily: "auto",
