@@ -34,17 +34,12 @@ const style = {
     marginBottom: "2rem",
   },
   employeeName: {
+    padding: 20,
     backgroundColor: "teal",
     fontSize: "1.3rem",
     fontFamily: "auto",
     color: "white !important",
     height: "7rem",
-  },
-  employeeExp: {
-    backgroundColor: "#00BFFF",
-    fontSize: "1.2rem",
-    fontFamily: "auto",
-    color: "whitesmoke !important",
   },
   employeeInfo: {
     fontFamily: "auto",
@@ -171,15 +166,16 @@ const OurTeam = () => {
                             style={{ color: "white" }}
                           >
                             <Grid item md style={style.employeeName}>
-                              <div>
-                                {subItem.name}, {subItem.designation},{" "}
-                                {subItem.company}{" "}
-                              </div>
-                              <div>{subItem.role}</div>
+                              <Typography variant="h6">{subItem.name}</Typography>
+                              <Typography variant="subtitle1">{subItem.designation}</Typography>
+                              <Typography variant="subtitle2"> {subItem.company}</Typography>
+                              <Typography variant="subtitle2">{subItem.role}</Typography>
+                              <Typography variant="subtitle2">
+                                Email:<u>{subItem.email}</u>
+                              </Typography>
                             </Grid>
                           </Grid>
                         </Grid>
-
                         <Grid item md={10} zeroMinWidth wrap="noWrap">
                           <Typography style={style.employeeInfo}>
                             {subItem.details}
