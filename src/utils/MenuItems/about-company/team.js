@@ -25,11 +25,11 @@ const TeamAndLeaderShip = {
         {
           name: "SD Prakash",
           avatar: `${BASE_URL}/Team_-2_weot4p`,
-          designation: "Founder & CEO",
+          designation: "Founder & CEO, Global Managing Partner",
           email: 'sdprakash@sdpgroups.com',
           role:
             "Global Smart Cities Expert, National & Local Government Advisor",
-          company: "SDP LLC",
+          company: "Smart Development Professionals LLC",
           experience: "10+ years",
           extrainfo: "",
           metrics: ["Consulting - 39%", "Advisory - 49%", "Others - 12%"],
