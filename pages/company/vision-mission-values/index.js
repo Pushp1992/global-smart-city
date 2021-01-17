@@ -15,13 +15,17 @@ import { CompanyVMV } from "../../../src/utils/MenuItems/about-company/vision";
 
 const style = {
   cardRoot: {
-    maxWidth: 445,
+    width: 345,
+    height: 200,
     // backgroundColor: "black",
+  },
+  margin: {
+    margin: '60px'
   },
   cardText: {
     //   color: 'white',
     fontSize: "1.2rem",
-    fontFamily: "auto",
+    fontFamily: "Arial",
   },
   topMargin: {
     marginTop: "40px",
@@ -99,24 +103,25 @@ const BottomCard = () => {
 
 const CEOMessage = () => {
   return (
-    <Container style={{backgroundColor: 'whitesmoke'}}>
-      <Grid md={6} container justify="space-around">
-        <Typography variant="h5" align="left" gutterBottom={true}>
+    <Container disableGutters={true} maxWidth="false" style={{backgroundColor: 'whitesmoke'}}>
+      <Grid item md style={style.margin}>
+      <Grid md={4} container>
+        <Typography variant="h6" align="left" gutterBottom={true} style={style.headingTextColor}>
           {CompanyVMV.ceoSection.subject}
         </Typography>
       </Grid>
-      <Grid container spacing={3} justify="center">
-        <Grid item md={8}>
-          <Typography variant="subtitle1" align="left" gutterBottom={true}>
+      <Grid container spacing={3} style={style.topMargin}>
+        <Grid item md={8} style={{fontStyle: 'italic'}}>
+          <Typography variant="h6" align="left" gutterBottom={true}>
             {CompanyVMV.ceoSection.salutation}
           </Typography>
 
-          <Typography variant="body1" align="left" gutterBottom={true}>
+          <Typography variant="h6" align="left" gutterBottom={true}>
             {CompanyVMV.ceoSection.messageBody.map((message, index) => {
               return (
                 <p
                   key={index}
-                  style={{ wordBreak: "break-all", fontFamily: "auto" }}
+                  style={{fontFamily: "aria" }}
                 >
                   {message.paragraph}
                 </p>
@@ -147,6 +152,7 @@ const CEOMessage = () => {
           </Grid>
         </Grid>
       </Grid>
+      </Grid>
     </Container>
   );
 };
@@ -159,7 +165,7 @@ const CompanyVisionMissionValues = () => {
           <NavBar />
         </Grid>
 
-        <Grid item md style={style.topMargin}>
+        <Grid item md style={style.margin}>
           <Typography
             align="auto"
             display="initial"
@@ -173,22 +179,21 @@ const CompanyVisionMissionValues = () => {
         <Grid
           container
           justify="center"
-          alignItems="center"
-          style={style.topMargin}
+          // alignItems="center"
+          // style={style.topMargin}
         >
           <img
             src={CompanyVMV.headerImage}
             alt="cover_image"
+            style={{ width: '80%'}}
             className={styles.fullScreenWidth}
           />
         </Grid>
 
         <Grid
           container
-          justify="space-evenly"
-          alignItems="center"
-          spacing={2}
-          style={style.topMargin}
+          justify="center"
+          spacing={5}
         >
           {CompanyVMV.cards.map((item, index) => {
             return (
@@ -242,14 +247,14 @@ const CompanyVisionMissionValues = () => {
             className={styles.fullScreenWidth}
           />
         </Grid> <br/>
-        <Grid container md={11} style={style.topMargin}>
-          <Typography style={style.topMargin} gutterBottom={true}>
+        <Grid container md={12} style={style.topMargin}>
+          <Typography style={style.margin} gutterBottom={true}>
             {CompanyVMV.bottomBanner.content}
           </Typography>
         </Grid>
       </Container>
 
-      <Container disableGutters={true} maxWidth="false" style={style.topMargin}>
+      <Container disableGutters={true} maxWidth="false">
         <Grid item md>
           <Footer />
         </Grid>

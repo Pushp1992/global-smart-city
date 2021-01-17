@@ -33,14 +33,14 @@ const TeamAndLeaderShip = {
           experience: "10+ years",
           extrainfo: "",
           metrics: ["Consulting - 39%", "Advisory - 49%", "Others - 12%"],
-          details: `SD Prakash is an entrepreneur and a National & Local Government Advisor for over 10 years. 
-            His background in technology as well as the business is one of the biggest strengths. He is a driven,
-            goal-oriented, entrepreneur, compassionate success-oriented person with team-building skills and a 
-            problem-solving attitude. He enjoy empowering government entities, MNCs, decision-makers and to help
-            them to accomplish their project goals and look for opportunities to develop a global business.
-            He is passionate about solving urban & rural problems and delivering the impacts that matter to
-            citizen experiences & quality of life by using efficient technologies and urban-rural management
-            for a better future to our kids.`,
+          details: `SD Prakash is an entrepreneur and a very experienced National & Local Government Advisor
+          in more than 40 smart cities projects globally. His background in technology as well as the business
+          is one of the biggest strengths. He is a driven, goal-oriented, entrepreneur, compassionate success
+          -oriented person with team-building skills and a problem-solving attitude. He enjoys empowering
+          government entities, MNCs, decision-makers and to help them to accomplish their project goals
+          and look for opportunities to develop a global business. He is passionate about solving urban 
+          & rural problems and delivering the impacts that matter to citizen experiences & quality of
+          life by using efficient technologies and urban-rural management for a better future to our kids.`,
         },
       ],
     },
@@ -48,7 +48,7 @@ const TeamAndLeaderShip = {
   extraInfo: {
     infoImage1: `${BASE_URL}/Team_-1_uw9pse`,
     infoImage2: `${BASE_URL}/Team-3_remj8b`,
-    infoData2: `We at SDP believe in Vision, Framework, Collaborations and Strategy for success.`
+    infoData2: `We at SDP believe in Vision, Framework, Collaborations and Strategy for success.`,
   },
 };
 

@@ -14,6 +14,9 @@ import styles from "../../../styles/home.module.scss";
 import { TeamAndLeaderShip } from "../../../src/utils/MenuItems/about-company/team";
 
 const style = {
+  margin: {
+    margin: "60px",
+  },
   topMargin: {
     marginTop: "40px",
   },
@@ -22,7 +25,7 @@ const style = {
   },
   headingTextColor: {
     color: "teal",
-    fontWeight: "600",
+    fontWeight: "600 !important",
   },
   teamHierarchy: {
     color: "teal",
@@ -36,6 +39,7 @@ const style = {
     fontSize: "1.3rem",
     fontFamily: "auto",
     color: "white !important",
+    height: "7rem",
   },
   employeeInfo: {
     fontFamily: "auto",
@@ -75,7 +79,7 @@ const OurTeam = () => {
           <CoverCard />
         </Grid>
 
-        <Grid item md style={style.topMargin}>
+        <Grid item md style={style.margin}>
           <Typography
             align="left"
             display="initial"
@@ -86,7 +90,7 @@ const OurTeam = () => {
           </Typography>
         </Grid>
 
-        <Grid item md style={style.topMargin}>
+        <Grid item md>
           <img
             src={TeamAndLeaderShip.bannerImage}
             alt="cover_image"
@@ -95,17 +99,15 @@ const OurTeam = () => {
           />
         </Grid>
 
-        <Grid item md style={style.topMargin}>
-          <div style={style.padding}>
-            <Typography>
-              <label>{TeamAndLeaderShip.mainContent.prefix}</label>
-              <label>{TeamAndLeaderShip.mainContent.paraGraph1}</label>
-            </Typography>{" "}
-            <br />
-            <Typography>
-              <label>{TeamAndLeaderShip.mainContent.paraGraph2}</label>
-            </Typography>
-          </div>
+        <Grid item md style={style.margin}>
+          <Typography>
+            <label>{TeamAndLeaderShip.mainContent.prefix}</label>
+            <label>{TeamAndLeaderShip.mainContent.paraGraph1}</label>
+          </Typography>{" "}
+          <br />
+          <Typography>
+            <label>{TeamAndLeaderShip.mainContent.paraGraph2}</label>
+          </Typography>
         </Grid>
 
         <Grid item md align="center" style={style.topMargin}>
@@ -157,7 +159,12 @@ const OurTeam = () => {
                             <img src={subItem.avatar} alt="leader_photo" />
                           </Grid>
 
-                          <Grid item md={8} align="center">
+                          <Grid
+                            item
+                            md={8}
+                            align="center"
+                            style={{ color: "white" }}
+                          >
                             <Grid item md style={style.employeeName}>
                               <Typography variant="h6">{subItem.name}</Typography>
                               <Typography variant="subtitle1">{subItem.designation}</Typography>
@@ -190,6 +197,7 @@ const OurTeam = () => {
                 src={TeamAndLeaderShip.extraInfo.infoImage1}
                 alt="main_content_image"
                 className={styles.deviceSpecificWidth}
+                //style={{ width: "700px" }}
               />
             </div>
           </Grid>
