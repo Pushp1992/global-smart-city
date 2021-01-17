@@ -26,6 +26,7 @@ const TeamAndLeaderShip = {
           name: "SD Prakash",
           avatar: `${BASE_URL}/Team_-2_weot4p`,
           designation: "Founder & CEO",
+          email: 'sdprakash@sdpgroups.com',
           role:
             "Global Smart Cities Expert, National & Local Government Advisor",
           company: "SDP LLC",
