@@ -98,7 +98,10 @@ export default function NavBar() {
         <div>
           <Link href="/">
             <a>
-              <img src={`${BASE_URL}/smart-city/company-logo_qel7bw`} alt="logo" />
+              <img
+                src={`${BASE_URL}/smart-city/company-logo_qel7bw`}
+                alt="logo"
+              />
             </a>
           </Link>
         </div>
@@ -112,7 +115,11 @@ export default function NavBar() {
             aria-haspopup="true"
             onClick={handleOpen}
             style={styles.buttonTheme}
-            style={{margin:"1rem",backgroundColor:"teal",marginRight:'1px'}}
+            style={{
+              margin: "1rem",
+              backgroundColor: "teal",
+              marginRight: "1px",
+            }}
           >
             About Company
           </Button>
@@ -170,7 +177,11 @@ export default function NavBar() {
             name="service"
             aria-haspopup="true"
             onClick={handleOpen}
-            style={{margin:"1rem",backgroundColor:"teal",marginRight:'1px'}}
+            style={{
+              margin: "1rem",
+              backgroundColor: "teal",
+              marginRight: "1px",
+            }}
           >
             Services
           </Button>
@@ -182,49 +193,57 @@ export default function NavBar() {
             keepMounted
           >
             <StyledMenuItem>
-              <Link href="">
+              <Link href="/service/city-benchmarking">
                 <a>
-                  <ListItemText primary="City Benchmarking" />
+                  <ListItemText primary="Smart Cities Benchmarking" />
                 </a>
               </Link>
             </StyledMenuItem>
             <Divider />
             <StyledMenuItem>
-              <Link href="">
+              <Link href="/service/government-advisory">
                 <a>
-                  <ListItemText primary="Digital Services" />
+                  <ListItemText primary="Government Advisory" />
                 </a>
               </Link>
             </StyledMenuItem>
             <Divider />
             <StyledMenuItem>
-              <Link href="">
+              <Link href="/service/consulting">
                 <a>
-                  <ListItemText primary="Consulting &amp; Advisory" />
+                  <ListItemText primary="Management Consulting" />
                 </a>
               </Link>
             </StyledMenuItem>
             <Divider />
             <StyledMenuItem>
-              <Link href="">
+              <Link href="/service/city-master-planning">
                 <a>
-                  <ListItemText primary="City Master Planning" />
+                  <ListItemText primary="Smart Cities Master Planning" />
                 </a>
               </Link>
             </StyledMenuItem>
             <Divider />
             <StyledMenuItem>
-              <Link href="">
+              <Link href="/service/digital-transformation">
                 <a>
-                  <ListItemText primary="Technology Strategy" />
+                  <ListItemText primary="Digital Transformation" />
                 </a>
               </Link>
             </StyledMenuItem>
             <Divider />
             <StyledMenuItem>
-              <Link href="">
+              <Link href="/service/information-communication">
                 <a>
-                  <ListItemText primary="Check All services here" />
+                  <ListItemText primary="Information Communication" />
+                </a>
+              </Link>
+            </StyledMenuItem>
+            <Divider />
+            <StyledMenuItem>
+              <Link href="/service/others">
+                <a>
+                  <ListItemText primary="Other Major Serices" />
                 </a>
               </Link>
             </StyledMenuItem>
@@ -236,7 +255,11 @@ export default function NavBar() {
             name="industry"
             aria-haspopup="true"
             onClick={handleOpen}
-            style={{margin:"1rem",backgroundColor:"teal",marginRight:'1px'}}
+            style={{
+              margin: "1rem",
+              backgroundColor: "teal",
+              marginRight: "1px",
+            }}
           >
             <Link href="">
               <a>Industries</a>
@@ -413,7 +436,11 @@ export default function NavBar() {
           <Button
             variant="contained"
             color="primary"
-            style={{margin:"1rem",backgroundColor:"teal",marginRight:'1px'}}
+            style={{
+              margin: "1rem",
+              backgroundColor: "teal",
+              marginRight: "1px",
+            }}
           >
             <Link href="">
               <a>Smart Data Observatory</a>
@@ -422,7 +449,11 @@ export default function NavBar() {
           <Button
             variant="contained"
             color="primary"
-            style={{margin:"1rem",backgroundColor:"teal",marginRight:'1px'}}
+            style={{
+              margin: "1rem",
+              backgroundColor: "teal",
+              marginRight: "1px",
+            }}
           >
             <Link href="">
               <a>Contact us</a>
@@ -436,7 +467,7 @@ export default function NavBar() {
               backgroundColor: "#b2d8d8",
               color: "#008080",
               width: "10rem",
-              marginRight:'1px'
+              marginRight: "1px",
             }}
           >
             Search
@@ -444,7 +475,7 @@ export default function NavBar() {
           <Button
             variant="contained"
             color="primary"
-            style={{margin:"1rem",backgroundColor:"teal"}}
+            style={{ margin: "1rem", backgroundColor: "teal" }}
           >
             <Link href="/about">
               <a>Login</a>
