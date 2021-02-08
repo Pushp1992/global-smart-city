@@ -2,15 +2,6 @@ import React from "react";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import { Typography } from "@material-ui/core";
-import LocationCityIcon from "@material-ui/icons/LocationCity";
-import {
-  Timeline,
-  TimelineItem,
-  TimelineSeparator,
-  TimelineConnector,
-  TimelineContent,
-  TimelineDot,
-} from "@material-ui/lab";
 
 import NavBar from "../../../src/component/nav-bar";
 import Footer from "../../../src/component/Footer/footer";
@@ -62,7 +53,7 @@ const InformationCommunicationTechnology = () => {
         {OtherServices.map((data) => {
           return (
             <Grid container key={data.id}>
-              <Grid item md={10} style={style.margin}>
+              <Grid item md={12} style={style.margin}>
                 <Typography
                   align="left"
                   display="initial"
@@ -79,7 +70,7 @@ const InformationCommunicationTechnology = () => {
                   {data.subHeading}
                 </Typography>
               </Grid>
-              <Grid item md={4} style={{marginLeft:'60px'}}>
+              <Grid item md={6} style={{marginLeft:'60px'}}>
                 <Typography>
                   <ul style={style.marginLeft}>
                     {data.description.map((desc) => {
@@ -89,7 +80,7 @@ const InformationCommunicationTechnology = () => {
                 </Typography>
               </Grid>
 
-              <Grid item md={6}>
+              <Grid item md={4}>
                 <img
                   src={data.bannerImage}
                   alt="cover_image"
